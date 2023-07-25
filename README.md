@@ -71,6 +71,8 @@ alt="Large Screen Feedback" width="50%" height="50%">
 
 </details>
 
+<br>
+
 ### Tablet Screens (Medium)
 
 <details>
@@ -138,6 +140,8 @@ alt="Medium Screen Feedback" width="40%" height="40%">
 
 </details>
 
+<br>
+
 ### Phone Screens (Small)
 
 <details>
@@ -204,3 +208,5 @@ alt="Small Screen Highscores" width="30%" height="30%">
 alt="Small Screen Feedback" width="30%" height="30%">
 
 </details>
+
+<br>
