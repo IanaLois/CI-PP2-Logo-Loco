@@ -9,56 +9,65 @@
 <details>
 <summary>Large Screen Start Page</summary>
 
-![Large Screen Start Page](./assets/images/laptop-wireframes/laptop-start-page.png)
+<img src="./assets/images/laptop-wireframes/laptop-start-page.png"
+alt="Large Screen Start Page" width="50%" height="50%">
 
 </details>
 
 <details>
 <summary>Large Screen Rules & Difficulty</summary>
 
-![Large Screen Rules & Difficulty](./assets/images/laptop-wireframes/laptop-rules-difficulty.png)
+<img src="./assets/images/laptop-wireframes/laptop-rules-difficulty.png"
+alt="Large Screen Rules & Difficulty" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Game Page</summary>
 
-![Large Screen Game Page](./assets/images/laptop-wireframes/laptop-game-page.png)
+<img src="./assets/images/laptop-wireframes/laptop-game-page.png"
+alt="Large Screen Game Page" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Correct Answer</summary>
 
-![Large Screen Correct Answer](./assets/images/laptop-wireframes/laptop-correct-answer.png)
+<img src="./assets/images/laptop-wireframes/laptop-correct-answer.png"
+alt="Large Screen Correct Answer" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Wrong Answer</summary>
 
-![Large Screen Wrong Answer](./assets/images/laptop-wireframes/laptop-wrong-answer.png)
+<img src="./assets/images/laptop-wireframes/laptop-wrong-answer.png"
+alt="Large Screen Wrong Answer" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Timer Expired</summary>
 
-![Large Screen Timer Expired](./assets/images/laptop-wireframes/laptop-timer-expired.png)
+<img src="./assets/images/laptop-wireframes/laptop-timer-expired.png"
+alt="Large Screen Timer Expired" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen End Page</summary>
 
-![Large Screen End Page](./assets/images/laptop-wireframes/laptop-end-page.png)
+<img src="./assets/images/laptop-wireframes/laptop-end-page.png"
+alt="Large Screen End Page" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Highscores</summary>
 
-![Large Screen Highscores Page](./assets/images/laptop-wireframes/laptop-highscores.png)
+<img src="./assets/images/laptop-wireframes/laptop-highscores.png"
+alt="Large Screen Highscores" width="50%" height="50%">
 
 </details>
 <details>
 <summary>Large Screen Feedback</summary>
 
-![Large Screen Feedback Page](./assets/images/laptop-wireframes/laptop-feedback.png)
+<img src="./assets/images/laptop-wireframes/laptop-feedback.png"
+alt="Large Screen Feedback" width="50%" height="50%">
 
 </details>
 
