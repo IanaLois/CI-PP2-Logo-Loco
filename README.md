@@ -2,6 +2,18 @@
 
 ## Design
 
+### Fonts
+
+[Google Fonts](https://fonts.google.com/) was used to generate the font family
+"REM" and in the event that it doesn't load, it will default to "sans-serif".
+REM was used throughout the project with various font weights 500, 700, and 900.
+REM was chosen because of its clarity and polished appearance in all weights.
+As the project's name implies, it's a "Logo Loco" multiple choice quiz with a
+lot of colourful images to look at and answers to choose from, so I didn't want
+to overcomplicate the font style and overwhelm the users. The REM font will
+provide users a better gaming experience without straining their eyes or causing
+them to lose focus on the game.
+
 ## Wireframes
 
 ### Laptop & Desktop Screens (Large)
