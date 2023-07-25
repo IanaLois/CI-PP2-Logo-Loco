@@ -1,4 +1,4 @@
-core.Microsoft*
+zcore.Microsoft*
 core.mongo*
 core.python*
 env.py
