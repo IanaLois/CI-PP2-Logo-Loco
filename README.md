@@ -6,15 +6,61 @@
 
 #### Laptop & Desktop Screens (Large)
 
+<details>
+<summary>Large Screen Start Page</summary>
+
 ![Large Screen Start Page](./assets/images/laptop-wireframes/laptop-start-page.png)
-![Large Screen Rules & Difficulty Page](./assets/images/laptop-wireframes/laptop-rules-difficulty.png)
+
+</details>
+
+<details>
+<summary>Large Screen Rules & Difficulty</summary>
+
+![Large Screen Rules & Difficulty](./assets/images/laptop-wireframes/laptop-rules-difficulty.png)
+
+</details>
+<details>
+<summary>Large Screen Game Page</summary>
+
 ![Large Screen Game Page](./assets/images/laptop-wireframes/laptop-game-page.png)
+
+</details>
+<details>
+<summary>Large Screen Correct Answer</summary>
+
 ![Large Screen Correct Answer](./assets/images/laptop-wireframes/laptop-correct-answer.png)
+
+</details>
+<details>
+<summary>Large Screen Wrong Answer</summary>
+
 ![Large Screen Wrong Answer](./assets/images/laptop-wireframes/laptop-wrong-answer.png)
+
+</details>
+<details>
+<summary>Large Screen Timer Expired</summary>
+
 ![Large Screen Timer Expired](./assets/images/laptop-wireframes/laptop-timer-expired.png)
+
+</details>
+<details>
+<summary>Large Screen End Page</summary>
+
 ![Large Screen End Page](./assets/images/laptop-wireframes/laptop-end-page.png)
+
+</details>
+<details>
+<summary>Large Screen Highscores</summary>
+
 ![Large Screen Highscores Page](./assets/images/laptop-wireframes/laptop-highscores.png)
+
+</details>
+<details>
+<summary>Large Screen Feedback</summary>
+
 ![Large Screen Feedback Page](./assets/images/laptop-wireframes/laptop-feedback.png)
+
+</details>
 
 #### Tablet Screens (Medium)
 
