@@ -1,39 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+### Wireframes
 
-Welcome,
+<details><summary>Laptop & Desktop Screens (Large)</summary>
+![Large Screen Start Page](assets/images/laptop-wireframes/laptop-start-page.png)
+![Large Screen Rules & Difficulty Page](assets/images/laptop-wireframes/laptop-rules-difficulty.png)
+![Large Screen Game Page](assets/images/laptop-wireframes/laptop-game-page.png)
+![Large Screen Correct Answer](assets/images/laptop-wireframes/laptop-correct-answer.png)
+![Large Screen Wrong Answer](assets/images/laptop-wireframes/laptop-wrong-answer.png)
+![Large Screen Timer Expired](assets/images/laptop-wireframes/laptop-timer-expired.png)
+![Large Screen End Page](assets/images/laptop-wireframes/laptop-end-page.png)
+![Large Screen Highscores Page](assets/images/laptop-wireframes/laptop-highscores.png)
+![Large Screen Feedback Page](assets/images/laptop-wireframes/laptop-feedback.png)
+</details>
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+<details><summary>Tablet Screens (Medium)</summary>
+![Medium Screen Start Page](assets/images/tablet-wireframes/tablet-start-page.png)
+![Medium Screen Rules & Difficulty Page](assets/images/tablet-wireframes/tablet-rules-difficulty.png)
+![Medium Screen Game Page](assets/images/tablet-wireframes/tablet-game-page.png)
+![Medium Screen Correct Answer](assets/images/tablet-wireframes/tablet-correct-answer.png)
+![Medium Screen Wrong Answer](assets/images/tablet-wireframes/tablet-wrong-answer.png)
+![Medium Screen Timer Expired](assets/images/tablet-wireframes/tablet-timer-expired.png)
+![Medium Screen End Page](assets/images/tablet-wireframes/tablet-end-page.png)
+![Medium Screen Highscores Page](assets/images/tablet-wireframes/tablet-highscores.png)
+![Medium Screen Feedback Page](assets/images/tablet-wireframes/tablet-feedback.png)
+</details>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+<details><summary>Phone Screens (Small)</summary>
+![Small Screen Start Page](assets/images/phone-wireframes/phone-start-page.png)
+![Small Screen Rules & Difficulty Page](assets/images/phone-wireframes/phone-rules-difficulty.png)
+![Small Screen Game Page](assets/images/phone-wireframes/phone-game-page.png)
+![Small Screen Correct Answer](assets/images/phone-wireframes/phone-correct-answer.png)
+![Small Screen Wrong Answer](assets/images/phone-wireframes/phone-wrong-answer.png)
+![Small Screen Timer Expired](assets/images/phone-wireframes/phone-timer-expired.png)
+![Small Screen End Page](assets/images/phone-wireframes/phone-end-page.png)
+![Small Screen Highscores Page](assets/images/phone-wireframes/phone-highscores.png)
+![Small Screen Feedback Page](assets/images/phone-wireframes/phone-feedback.png)
+</details>
