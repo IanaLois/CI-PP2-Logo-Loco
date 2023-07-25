@@ -2,9 +2,9 @@
 
 ## Design
 
-### Wireframes
+## Wireframes
 
-#### Laptop & Desktop Screens (Large)
+### Laptop & Desktop Screens (Large)
 
 <details>
 <summary>Large Screen Start Page</summary>
@@ -62,20 +62,66 @@
 
 </details>
 
-#### Tablet Screens (Medium)
+### Tablet Screens (Medium)
+
+<details>
+<summary>Medium Screen Start Page</summary>
 
 ![Medium Screen Start Page](./assets/images/tablet-wireframes/tablet-start-page.png)
+
+</details>
+<details>
+<summary>Medium Screen Rules & Difficulty Page</summary>
+
 ![Medium Screen Rules & Difficulty Page](./assets/images/tablet-wireframes/tablet-rules-difficulty.png)
+
+</details>
+<details>
+<summary>Medium Screen Game Page</summary>
+
 ![Medium Screen Game Page](./assets/images/tablet-wireframes/tablet-game-page.png)
+
+</details>
+<details>
+<summary>Medium Screen Correct Answer</summary>
+
 ![Medium Screen Correct Answer](./assets/images/tablet-wireframes/tablet-correct-answer.png)
+
+</details>
+<details>
+<summary>Medium Screen Wrong Answer</summary>
+
 ![Medium Screen Wrong Answer](./assets/images/tablet-wireframes/tablet-wrong-answer.png)
+
+</details>
+<details>
+<summary>Medium Screen Timer Expired</summary>
+
 ![Medium Screen Timer Expired](./assets/images/tablet-wireframes/tablet-timer-expired.png)
+
+</details>
+<details>
+<summary>Medium Screen End Page</summary>
+
 ![Medium Screen End Page](./assets/images/tablet-wireframes/tablet-end-page.png)
+
+</details>
+<details>
+<summary>Medium Screen Highscores</summary>
+
 ![Medium Screen Highscores Page](./assets/images/tablet-wireframes/tablet-highscores.png)
+
+</details>
+<details>
+<summary>Medium Screen Feedback</summary>
+
 ![Medium Screen Feedback Page](./assets/images/tablet-wireframes/tablet-feedback.png)
 
-#### Phone Screens (Small)
+</details>
 
+### Phone Screens (Small)
+
+![Small Screen Start Page](./assets/images/phone-wireframes/phone-start-page.png)
 ![Small Screen Game Page](./assets/images/phone-wireframes/phone-game-page.png)
 ![Small Screen Correct Answer](./assets/images/phone-wireframes/phone-correct-answer.png)
 ![Small Screen Wrong Answer](./assets/images/phone-wireframes/phone-wrong-answer.png)
