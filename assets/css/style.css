@@ -45,7 +45,25 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 10px;
     opacity: 0.9;
     box-shadow: 0 0 5px 5px rgb(93, 81, 162);
+}
+
+.rules-and-difficulty,
+.game-page,
+.wrong-answer,
+.timer-expired,
+.end-page,
+.highscores,
+.feedback {
+    display: none;
+}
+
+/* ------------------------------------------------------------ Media Queries */
+@media (max-width: 768px) {
+    .game-container {
+        width: 60%;
+        height: 70%;
+    }
 }
