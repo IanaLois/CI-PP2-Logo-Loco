@@ -16,11 +16,19 @@ h1 {
     font-family: "REM", sans-serif;
     font-weight: 900;
     font-style: italic;
+    font-size: 4em;
 }
 
 h2 {
     font-family: "REM", sans-serif;
     font-weight: 500;
+    font-size: 3em;
+}
+
+p {
+    font-family: "REM", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
 }
 
 body {
@@ -40,18 +48,14 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     border-radius: 10px;
     opacity: 0.9;
-    box-shadow: 0 0 5px 5px rgb(93, 81, 162);
 }
 
 .rules-and-difficulty,
 .game-page,
+.correct-answer,
 .wrong-answer,
 .timer-expired,
 .end-page,
@@ -60,7 +64,33 @@ body {
     display: none;
 }
 
+.top-display {
+    display: flex;
+    height: 10%;
+    font-size: 2.5em;
+    letter-spacing: 0.5em;
+    color: #000;
+}
+
+/* --------------------------------------------------------------- Start Page */
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 51%;
+    gap: 2rem;
+    align-self: center;
+}
+
+.game-title {
+    background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
+    padding: 10px;
+    border-radius: 70px;
+}
+
 /* ------------------------------------------------------------ Media Queries */
+
 @media (max-width: 768px) {
     .game-container {
         width: 60%;
