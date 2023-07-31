@@ -2,14 +2,37 @@
 
 ## Design
 
+### Colors
+
+<details>
+<summary>Color Palette</summary>
+
+<img src="./assets/images/color-palette/color-hunt-palette.png"
+alt="Color Palette" width="25%" height="25%">
+
+<img src="./assets/images/color-palette/color-codes.png"
+alt="Color Palette" width="60%" height="60%">
+
+</details>
+
+<br>
+
+The color scheme for the project was obtained from [Color Hunt](https://colorhunt.co/).
+This palette was chosen because it has a cool and retro aesthetic that
+encourages a fun gaming experience while also evoking nostalgia, as if users
+were playing an old favorite childhood game. The colors also evoke happy tones
+creating an environment in which users can feel at ease because they are already
+racing against the clock and don't need to be affected by colors that connote
+danger and warning like red, orange and yellow.
+
 ### Fonts
 
 [Google Fonts](https://fonts.google.com/) was used to generate the font family
 "REM" and in the event that it doesn't load, it will default to "sans-serif".
-REM was used throughout the project with various font weights 500, 700, and 900.
+REM was used throughout the project with various font weights 500 and 900.
 REM was chosen because of its clarity and polished appearance in all weights.
 As the project's name implies, it's a "Logo Loco" multiple choice quiz with a
-lot of colourful images to look at and answers to choose from, so I didn't want
+lot of colorful images to look at and answers to choose from, so I didn't want
 to overcomplicate the font style and overwhelm the users. The REM font will
 provide users a better gaming experience without straining their eyes or causing
 them to lose focus on the game.
@@ -22,7 +45,7 @@ them to lose focus on the game.
 <summary>Start Page</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-start-page.png"
-alt="Large Screen Start Page" width="50%" height="50%">
+alt="Large Screen Start Page" width="60%" height="60%">
 
 </details>
 
@@ -30,56 +53,56 @@ alt="Large Screen Start Page" width="50%" height="50%">
 <summary>Rules & Difficulty</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-rules-difficulty.png"
-alt="Large Screen Rules & Difficulty" width="50%" height="50%">
+alt="Large Screen Rules & Difficulty" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Game Page</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-game-page.png"
-alt="Large Screen Game Page" width="50%" height="50%">
+alt="Large Screen Game Page" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Correct Answer</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-correct-answer.png"
-alt="Large Screen Correct Answer" width="50%" height="50%">
+alt="Large Screen Correct Answer" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Wrong Answer</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-wrong-answer.png"
-alt="Large Screen Wrong Answer" width="50%" height="50%">
+alt="Large Screen Wrong Answer" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Timer Expired</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-timer-expired.png"
-alt="Large Screen Timer Expired" width="50%" height="50%">
+alt="Large Screen Timer Expired" width="60%" height="60%">
 
 </details>
 <details>
 <summary>End Page</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-end-page.png"
-alt="Large Screen End Page" width="50%" height="50%">
+alt="Large Screen End Page" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Highscores</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-highscores.png"
-alt="Large Screen Highscores" width="50%" height="50%">
+alt="Large Screen Highscores" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Feedback</summary>
 
 <img src="./assets/images/laptop-wireframes/laptop-feedback.png"
-alt="Large Screen Feedback" width="50%" height="50%">
+alt="Large Screen Feedback" width="60%" height="60%">
 
 </details>
 
