@@ -12,6 +12,12 @@ html {
     background-attachment: fixed;
 }
 
+body {
+    font-family: "REM", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+}
+
 h1 {
     font-family: "REM", sans-serif;
     font-weight: 900;
@@ -29,12 +35,6 @@ p {
     font-family: "REM", sans-serif;
     font-weight: 500;
     font-size: 2em;
-}
-
-body {
-    font-family: "REM", sans-serif;
-    font-weight: 500;
-    min-height: 100vh;
 }
 
 .game-container {
@@ -64,12 +64,23 @@ body {
     display: none;
 }
 
+/* ------------------------------------------------------------------- Layout */
+
 .top-display {
     display: flex;
     height: 10%;
     font-size: 2.5em;
     letter-spacing: 0.5em;
     color: #000;
+}
+
+.bottom-display {
+    width: 18rem;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
 }
 
 /* --------------------------------------------------------------- Start Page */
