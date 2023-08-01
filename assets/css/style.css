@@ -1,41 +1,48 @@
+/* ------------------------------------------------------------- Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=REM:wght@500;900&display=swap');
+
+/* --------------------------------------------------------- Global Selectors */
 
 * {
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 html {
     background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-body {
+body,
+h1,
+h2,
+p {
     font-family: "REM", sans-serif;
     font-weight: 500;
+}
+
+body {
     min-height: 100vh;
 }
 
 h1 {
-    font-family: "REM", sans-serif;
     font-weight: 900;
     font-style: italic;
     font-size: 4em;
 }
 
 h2 {
-    font-family: "REM", sans-serif;
-    font-weight: 500;
     font-size: 3em;
 }
 
 p {
-    font-family: "REM", sans-serif;
-    font-weight: 500;
     font-size: 2em;
 }
+
+/* ------------------------------------------------------------------- Layout */
 
 .game-container {
     background-color: #fff;
@@ -63,8 +70,6 @@ p {
 .feedback {
     display: none;
 }
-
-/* ------------------------------------------------------------------- Layout */
 
 .top-display {
     display: flex;

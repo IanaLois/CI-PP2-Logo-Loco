@@ -4,6 +4,8 @@
 
 ### Colors
 
+<br>
+
 <details>
 <summary>Color Palette</summary>
 
