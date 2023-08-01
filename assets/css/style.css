@@ -79,13 +79,27 @@ p {
     color: #000;
 }
 
+/* ------------------------------------------------------------------- Footer */
+
 .bottom-display {
-    width: 18rem;
     position: absolute;
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.8;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.bottom-display p,
+.bottom-display a {
+    font-size: 0.9rem;
+}
+
+.bottom-display p {
+    text-transform: uppercase;
 }
 
 /* --------------------------------------------------------------- Start Page */
@@ -103,7 +117,6 @@ p {
     background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
     padding: 10px;
     border-radius: 70px;
-    text-shadow: 1px 1px 1px #000;
 }
 
 /* ------------------------------------------------------------ Username Form */
@@ -136,17 +149,20 @@ input[type="text"] {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-family: "REM", sans-serif;
 }
 
 input[type="text"]:focus {
     outline: none;
     border-color: #A084E8;
     box-shadow: 0px 0px 3px #A084E8;
+    font-family: "REM", sans-serif;
 }
 
 input[type="text"]::placeholder {
     color: #6F61C0;
     opacity: 0.5;
+    font-family: "REM", sans-serif;
 }
 
 button[type="submit"] {
@@ -160,6 +176,7 @@ button[type="submit"] {
     transition: all 0.3s ease-in-out;
     font-size: 1rem;
     text-transform: uppercase;
+    font-family: "REM", sans-serif;
 }
 
 button[type="submit"]:hover {
@@ -171,6 +188,7 @@ button[type="submit"]:hover {
     font-weight: 900;
     box-shadow: -3px 3px 0px #6F61C0;
     font-size: 1.3rem;
+    font-family: "REM", sans-serif;
 }
 
 /* ------------------------------------------------------------ Media Queries */
