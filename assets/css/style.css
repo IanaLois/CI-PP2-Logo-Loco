@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------- Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=REM:wght@500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@500;700;900&display=swap');
 
 /* --------------------------------------------------------- Global Selectors */
 
@@ -31,22 +31,22 @@ body {
 h1 {
     font-weight: 900;
     font-style: italic;
-    font-size: 4em;
+    font-size: 3.8em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* ------------------------------------------------------------------- Layout */
 
 .game-container {
     background-color: #fff;
-    height: 30rem;
+    height: 35rem;
     width: 45rem;
     padding: 2rem;
     position: absolute;
@@ -82,7 +82,7 @@ p {
 .bottom-display {
     width: 18rem;
     position: absolute;
-    top: 94%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0.8;
@@ -94,8 +94,8 @@ p {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    height: 51%;
-    gap: 2rem;
+    height: 100%;
+    gap: 1.5rem;
     align-self: center;
 }
 
@@ -103,6 +103,74 @@ p {
     background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
     padding: 10px;
     border-radius: 70px;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* ------------------------------------------------------------ Username Form */
+
+#username-form {
+    max-width: 21rem;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 1.1rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: #000;
+    font-style: italic;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: 2px solid #A084E8;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #A084E8;
+    color: #6f61c0;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #A084E8;
+    box-shadow: 0px 0px 3px #A084E8;
+}
+
+input[type="text"]::placeholder {
+    color: #6F61C0;
+    opacity: 0.5;
+}
+
+button[type="submit"] {
+    background-color: #A084E8;
+    color: #000;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: -5px 5px 0px #6F61C0;
+    transition: all 0.3s ease-in-out;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-color: #A084E8;
+    color: #000;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: -3px 3px 0px #6F61C0;
+    font-size: 1.3rem;
 }
 
 /* ------------------------------------------------------------ Media Queries */
