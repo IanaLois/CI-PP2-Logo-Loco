@@ -222,7 +222,7 @@ button[type="submit"]:hover {
 
 /* ------------------------------------------------------------ Media Queries */
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
     p {
         font-size: 1em;
     }
@@ -280,6 +280,62 @@ button[type="submit"]:hover {
         font-size: 0.9rem;
         margin-bottom: 0.6rem;
         margin-top: 0rem;
+    }
+
+    #username-form {
+        max-width: 11rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    p {
+        font-size: 1em;
+    }
+
+    .game-container {
+        width: 80%;
+        height: 90%;
+        padding: 0.6rem;
+    }
+
+    .bottom-display {
+        align-items: center;
+        width: 100%;
+        font-size: 0.7rem;
+        gap: 1rem;
+        margin-bottom: 0rem;
+    }
+
+    .start-page {
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .game-title {
+        font-size: 0.5em;
+        margin: 0 3rem;
+    }
+
+    input[type="text"] {
+        padding: 4px;
+        font-size: 1.1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    button[type="submit"] {
+        padding: 6px 20px;
+        font-size: 0.9rem;
+    }
+
+    .top-display {
+        height: 10%;
+        font-size: 1.4em;
+    }
+
+    label {
+        font-size: 0.9rem;
+        margin-bottom: 0.6rem;
+        margin-top: 0.4rem;
     }
 
     #username-form {
