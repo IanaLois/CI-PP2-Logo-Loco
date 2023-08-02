@@ -145,6 +145,7 @@ p {
     background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
     padding: 10px;
     border-radius: 70px;
+    margin: 0 3rem;
 }
 
 /* ------------------------------------------------------------ Username Form */
