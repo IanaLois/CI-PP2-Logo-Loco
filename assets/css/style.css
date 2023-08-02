@@ -95,11 +95,39 @@ p {
 
 .bottom-display p,
 .bottom-display a {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .bottom-display p {
     text-transform: uppercase;
+}
+
+/* ------------------------------------------------------------ Feedback link */
+
+.bottom-display a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bottom-display a:hover {
+    color: #000;
+}
+
+.bottom-display a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1.2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.bottom-display a:hover::before {
+    transform: scaleX(1);
 }
 
 /* --------------------------------------------------------------- Start Page */
