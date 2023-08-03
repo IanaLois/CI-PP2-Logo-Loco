@@ -85,7 +85,7 @@ p {
     opacity: 0.7;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -94,6 +94,7 @@ p {
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 2rem;
+    align-items: center;
 }
 
 .bottom-display p {
@@ -103,20 +104,18 @@ p {
 
 /* ------------------------------------------------------------ Feedback link */
 
-.bottom-display a {
+#feedback-link {
     text-decoration: none;
     color: #000;
+    font-size: 1.1em;
+    position: relative;
 }
 
-.bottom-display a:hover {
-    color: #000;
-}
-
-.bottom-display a::before {
+#feedback-link::before {
     content: "";
     position: absolute;
     display: block;
-    width: 152.76px;
+    width: 100%;
     height: 2.5px;
     bottom: -2.5px;
     left: 0;
@@ -125,7 +124,7 @@ p {
     transition: transform 0.3s ease;
 }
 
-.bottom-display a:hover::before {
+#feedback-link:hover::before {
     transform: scaleX(1);
 }
 
@@ -160,7 +159,7 @@ label {
     display: block;
     margin-bottom: 1.1rem;
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     color: #000;
     font-style: italic;
 }
@@ -177,7 +176,7 @@ input[type="text"] {
     font-weight: 800;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.4em;
     font-family: "REM", sans-serif;
 }
 
@@ -203,7 +202,7 @@ button[type="submit"] {
     font-weight: 900;
     box-shadow: -5px 5px 0px #6F61C0;
     transition: all 0.3s ease-in-out;
-    font-size: 1rem;
+    font-size: 1em;
     text-transform: uppercase;
     font-family: "REM", sans-serif;
 }
@@ -216,13 +215,97 @@ button[type="submit"]:hover {
     cursor: pointer;
     font-weight: 900;
     box-shadow: -3px 3px 0px #6F61C0;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     font-family: "REM", sans-serif;
 }
 
 /* ------------------------------------------------------------ Media Queries */
 
-@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+@media (max-width: 480px) {
+    p {
+        font-size: 1em;
+    }
+
+    .game-container {
+        height: 78%;
+        padding: 0.6rem;
+    }
+
+    .game-title h1 {
+        font-size: 1.3em;
+    }
+
+    label {
+        font-size: 0.8em;
+    }
+
+    input[type="text"] {
+        font-size: 0.6em;
+    }
+
+    button[type="submit"] {
+        font-size: 0.6em;
+    }
+
+    .top-display {
+        font-size: 1.2em;
+    }
+
+    .bottom-display {
+        width: 100%;
+        margin-bottom: 0.3rem;
+        font-size: 0.7em;
+        gap: 0.5rem;
+    }
+
+    .start-page {
+        padding: 0.8rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    p {
+        font-size: 1.6em;
+    }
+
+    .game-container {
+        height: 76%;
+        padding: 1rem;
+    }
+
+    .game-title h1 {
+        font-size: 2.1em;
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+
+    input[type="text"] {
+        font-size: 1em;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9em;
+    }
+
+    .top-display {
+        font-size: 1.9em;
+    }
+
+    .bottom-display {
+        width: 100%;
+        margin-bottom: 0.4rem;
+        font-size: 0.8em;
+    }
+
+    .start-page {
+        padding: 0.9rem;
+    }
+}
+
+/*
+    @media (min-width: 320px) and (max-width: 376px) and (orientation: portrait) {
     p {
         font-size: 1em;
     }
@@ -236,7 +319,7 @@ button[type="submit"]:hover {
     .bottom-display {
         flex-direction: column;
         align-items: center;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         gap: 0.5rem;
         width: 100%;
         margin-bottom: 0.5rem;
@@ -262,13 +345,13 @@ button[type="submit"]:hover {
 
     input[type="text"] {
         padding: 4px;
-        font-size: 1.1rem;
+        font-size: 1.1em;
         margin-bottom: 0.5rem;
     }
 
     button[type="submit"] {
         padding: 6px 20px;
-        font-size: 0.9rem;
+        font-size: 0.9em;
     }
 
     .top-display {
@@ -277,7 +360,7 @@ button[type="submit"]:hover {
     }
 
     label {
-        font-size: 0.9rem;
+        font-size: 0.9em;
         margin-bottom: 0.6rem;
         margin-top: 0rem;
     }
@@ -287,23 +370,80 @@ button[type="submit"]:hover {
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+@media (min-width: 377px) and (max-width: 415px) and (orientation: portrait) {
+    p {
+        font-size: 1.4em;
+    }
+
+    .game-container {
+        width: 85%;
+        height: 76%;
+        padding: 1rem;
+    }
+
+    .bottom-display {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.8em;
+        gap: 0.5rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .start-page {
+        gap: 1.3rem;
+        padding: 0;
+    }
+
+    .game-title {
+        font-size: 0.5em;
+        margin: 0 3rem;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        font-size: 1.2em;
+        margin-bottom: 1.1rem;
+    }
+
+    button[type="submit"] {
+        padding: 8px 20px;
+        font-size: 1em;
+    }
+
+    .top-display {
+        height: 10%;
+        font-size: 1.7em;
+    }
+
+    label {
+        font-size: 1.2em;
+        margin-bottom: 0.8rem;
+        margin-top: 0.2rem;
+    }
+
+    #username-form {
+        max-width: 11rem;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 668px) and (orientation: landscape) {
     p {
         font-size: 1em;
     }
 
     .game-container {
         width: 80%;
-        height: 90%;
+        height: 80%;
         padding: 0.6rem;
     }
 
     .bottom-display {
         align-items: center;
         width: 100%;
-        font-size: 0.7rem;
+        font-size: 0.6em;
         gap: 1rem;
-        margin-bottom: 0rem;
+        margin-bottom: 0.5rem;
     }
 
     .start-page {
@@ -317,14 +457,14 @@ button[type="submit"]:hover {
     }
 
     input[type="text"] {
-        padding: 4px;
-        font-size: 1.1rem;
-        margin-bottom: 0.6rem;
+        padding: 2px;
+        font-size: 0.8em;
+        margin-bottom: 0.3rem;
     }
 
     button[type="submit"] {
-        padding: 6px 20px;
-        font-size: 0.9rem;
+        padding: 4px 20px;
+        font-size: 0.6em;
     }
 
     .top-display {
@@ -333,7 +473,7 @@ button[type="submit"]:hover {
     }
 
     label {
-        font-size: 0.9rem;
+        font-size: 0.8em;
         margin-bottom: 0.6rem;
         margin-top: 0.4rem;
     }
@@ -342,3 +482,65 @@ button[type="submit"]:hover {
         max-width: 11rem;
     }
 }
+
+@media (min-width: 668px) and (max-width: 799px) and (orientation: landscape) {
+    p {
+        font-size: 1.5em;
+    }
+
+    .game-container {
+        width: 80%;
+        height: 80%;
+        padding: 0.7rem;
+    }
+
+    .bottom-display {
+        align-items: center;
+        width: 100%;
+        font-size: 0.8em;
+        gap: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .start-page {
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    .game-title {
+        font-size: 0.6em;
+        margin: 0 6rem;
+    }
+
+    input[type="text"] {
+        padding: 2px;
+        font-size: 1.1em;
+        margin-bottom: 0.6rem;
+    }
+
+    button[type="submit"] {
+        padding: 5px 20px;
+        font-size: 1em;
+    }
+
+    button[type="submit"]:hover {
+        padding: 7px 22px;
+        font-size: 1.2em;
+    }
+
+    .top-display {
+        height: 10%;
+        font-size: 1.6em;
+    }
+
+    label {
+        font-size: 1.2em;
+        margin-bottom: 0.5rem;
+        margin-top: 0.3rem;
+    }
+
+    #username-form {
+        max-width: 14rem;
+    }
+}
+*/
