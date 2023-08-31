@@ -67,7 +67,9 @@ p {
 .timer-expired,
 .end-page,
 .highscores,
-.feedback {
+.feedback,
+.rules,
+.choose-difficulty {
     display: none;
 }
 
@@ -217,6 +219,35 @@ button[type="submit"]:hover {
     box-shadow: -3px 3px 0px #6F61C0;
     font-size: 1.3em;
     font-family: "REM", sans-serif;
+}
+
+/* ----------------------------------------------------- Rules and Difficulty */
+.r-and-d-flexbox {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.r-flexbox,
+.d-flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.rules-description p {
+    padding: 0.2rem;
+    margin: 0.6rem;
+    font-size: 1.2em;
+}
+
+.difficulty-levels {
+    font-size: 1.4em;
+    padding: 1rem;
+}
+
+.r-and-d-flexbox>.rules,
+.r-and-d-flexbox>.choose-difficulty {
+    flex: 1;
+    flex-basis: calc(50% - 1.5rem);
 }
 
 /* ------------------------------------------------------------ Media Queries */
