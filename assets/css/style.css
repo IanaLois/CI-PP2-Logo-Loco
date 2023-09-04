@@ -48,7 +48,7 @@ p {
     background-color: #fff;
     width: 90%;
     max-width: 60rem;
-    padding: 2rem;
+    padding: 1.2rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -137,7 +137,7 @@ p {
     flex-direction: column;
     padding: 1rem;
     height: 100%;
-    gap: 1.5rem;
+    gap: 1.3rem;
     align-self: center;
     justify-content: center;
 }
@@ -147,6 +147,14 @@ p {
     padding: 10px;
     border-radius: 70px;
     margin: 0 3rem;
+}
+
+.game-title h1 {
+    font-size: 3.5em;
+}
+
+.game-page h2 {
+    font-size: 1.5em;
 }
 
 /* ------------------------------------------------------------ Username Form */
@@ -159,8 +167,8 @@ p {
 
 label {
     display: block;
-    margin-bottom: 1.1rem;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.1rem;
     font-size: 1.3em;
     color: #000;
     font-style: italic;
@@ -168,8 +176,8 @@ label {
 
 input[type="text"] {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 1.5rem;
+    padding: 6px;
+    margin-bottom: 1rem;
     border-radius: 5px;
     border: 2px solid #A084E8;
     background-color: #fff;
@@ -199,25 +207,33 @@ input[type="text"]::placeholder {
 
 .r-and-d-flexbox {
     display: flex;
-    margin-top: 1rem;
+    margin: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .r-flexbox,
 .d-flexbox {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .rules-description p {
     padding: 0.2rem;
-    margin: 0.6rem;
-    font-size: 1.2em;
+    margin-top: 0.6rem;
+    font-size: 1.1em;
 }
 
 .r-and-d-flexbox>.rules,
 .r-and-d-flexbox>.choose-difficulty {
     flex: 1;
     flex-basis: calc(50% - 1.5rem);
+}
+
+.rules-title h2,
+.difficulty-title h2 {
+    font-size: 2em;
 }
 
 /* --------------------------------------------------------------- Difficulty */
@@ -230,10 +246,10 @@ input[type="text"]::placeholder {
 }
 
 .difficulty-levels {
-    font-size: 1.4em;
     display: flex;
-    gap: 2rem;
-    margin: 2rem;
+    font-size: 1.4em;
+    gap: 1rem;
+    margin: 1rem 0rem;
     flex-direction: column;
     align-items: center;
 }
@@ -500,6 +516,23 @@ input[type="text"]::placeholder {
         margin-bottom: 2.2rem;
         margin-top: 1.2rem;
     }
+
+    .difficulty-levels {
+        flex-direction: row;
+    }
+
+    .rules-description p {
+        font-size: 1.7em;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 3em;
+    }
+
+    .r-and-d-flexbox {
+        gap: 5rem;
+    }
 }
 
 @media (min-width: 1078px) and (min-height: 1918px) and (orientation: portrait) {
@@ -558,6 +591,31 @@ input[type="text"]::placeholder {
     label {
         margin-bottom: 2.2rem;
         margin-top: 1.2rem;
+    }
+
+    .difficulty-levels {
+        flex-direction: row;
+    }
+
+    .rules-description p {
+        font-size: 2.4em;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 3.8em;
+    }
+
+    .r-and-d-flexbox {
+        gap: 5rem;
+    }
+
+    .button-style {
+        font-size: 1.7em;
+    }
+
+    .button-style:hover {
+        font-size: 2em;
     }
 }
 
@@ -734,6 +792,39 @@ input[type="text"]::placeholder {
     #username-form {
         max-width: 22rem;
     }
+
+    .r-and-d-flexbox {
+        flex-direction: column;
+    }
+
+    .difficulty-levels {
+        flex-direction: row;
+        gap: 0rem;
+        margin: 0rem;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 1.7em;
+    }
+
+    .rules-description p {
+        margin: 0.5rem;
+        font-size: 0.9em;
+    }
+
+    .r-flexbox,
+    .d-flexbox {
+        align-items: center;
+    }
+
+    .button-style {
+        font-size: 0.8em;
+    }
+
+    .button-style:hover {
+        font-size: 1.1em;
+    }
 }
 
 @media (min-width: 1364px) and (max-width: 1682px) and (min-height: 1022px) and (max-height: 1052px) and (orientation: landscape) {
@@ -797,6 +888,31 @@ input[type="text"]::placeholder {
         margin-bottom: 2.2rem;
         margin-top: 1.2rem;
     }
+
+    .rules-description {
+        padding: 0.5rem 0rem;
+    }
+
+    .difficulty-title {
+        margin-top: 1rem;
+    }
+
+    .difficulty-levels {
+        flex-direction: row;
+    }
+
+    .r-and-d-flexbox {
+        gap: 0.5rem;
+    }
+
+    .rules-description p {
+        font-size: 1.7em;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 3em;
+    }
 }
 
 @media (min-width: 1918px) and (min-height: 1022px) and (orientation: landscape) {
@@ -859,5 +975,30 @@ input[type="text"]::placeholder {
     label {
         margin-bottom: 2.2rem;
         margin-top: 1.2rem;
+    }
+
+    .rules-description {
+        padding: 0.5rem 0rem;
+    }
+
+    .difficulty-title {
+        margin-top: 1rem;
+    }
+
+    .difficulty-levels {
+        flex-direction: row;
+    }
+
+    .r-and-d-flexbox {
+        gap: 0.5rem;
+    }
+
+    .rules-description p {
+        font-size: 1.7em;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 3em;
     }
 }
