@@ -272,15 +272,8 @@ input[type="text"]::placeholder {
 }
 
 .button-style:hover {
-    background-color: #A084E8;
-    color: #000;
-    padding: 8px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: 900;
     box-shadow: -3px 3px 0px #6F61C0;
     font-size: 1.3em;
-    font-family: "REM", sans-serif;
 }
 
 /* ------------------------------------------------------------ Media Queries */
@@ -309,14 +302,15 @@ input[type="text"]::placeholder {
         font-size: 0.8em;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 0.8em;
         margin-top: 0.1rem;
+        padding: 8px 10px;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 1.1em;
-
+        padding: 8px 10px;
     }
 
     .top-icons {
@@ -356,7 +350,6 @@ input[type="text"]::placeholder {
     .difficulty-levels {
         flex-direction: row;
         font-size: 0.7em;
-        align-items: center;
         gap: 0rem;
         margin: 0rem;
     }
@@ -366,11 +359,6 @@ input[type="text"]::placeholder {
     .div-hard button {
         min-width: 3rem;
         margin: 0.5rem;
-    }
-
-    .button-style,
-    .button-style:hover {
-        padding: 8px 10px;
     }
 
     .rules-title h2,
@@ -419,18 +407,15 @@ input[type="text"]::placeholder {
     }
 
     .start-page {
-        padding: 1rem;
         height: auto;
     }
 
     #username-form {
         max-width: 15rem;
-        height: 9.5rem;
         margin-top: 1.5rem;
     }
 
     .button-style {
-        font-size: 1rem;
         padding: 6px 8px;
     }
 
@@ -456,7 +441,6 @@ input[type="text"]::placeholder {
     .difficulty-levels {
         flex-direction: row;
         font-size: 0.5em;
-        align-items: center;
         gap: 0rem;
         margin: 0rem;
     }
@@ -480,10 +464,6 @@ input[type="text"]::placeholder {
 
 @media (min-width: 374px) and (max-width: 481px) and (min-height: 735px) and (max-height: 897px) and (orientation: portrait) {
 
-    p {
-        font-size: 1.8em;
-    }
-
     .game-container {
         height: 78%;
         padding: 1.1rem;
@@ -506,12 +486,14 @@ input[type="text"]::placeholder {
         margin-bottom: 0.5rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 1.3em;
+        padding: 8px 15px;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 1.6em;
+        padding: 8px 15px;
     }
 
     .top-icons {
@@ -540,7 +522,6 @@ input[type="text"]::placeholder {
     }
 
     .rules-description p {
-        font-size: 1.1em;
         margin-top: 0.2rem;
         padding: 0rem 0.2rem;
     }
@@ -552,7 +533,6 @@ input[type="text"]::placeholder {
     .difficulty-levels {
         flex-direction: row;
         font-size: 1em;
-        align-items: center;
         gap: 0rem;
         margin: 0rem;
     }
@@ -562,11 +542,6 @@ input[type="text"]::placeholder {
     .div-hard button {
         min-width: 5rem;
         margin: 0.5rem;
-    }
-
-    .button-style,
-    .button-style:hover {
-        padding: 8px 15px;
     }
 
     .rules-title h2,
@@ -602,7 +577,6 @@ input[type="text"]::placeholder {
     .difficulty-levels {
         flex-direction: row;
         font-size: 1.2em;
-        align-items: center;
         gap: 0rem;
     }
 
@@ -610,20 +584,11 @@ input[type="text"]::placeholder {
     .div-medium button,
     .div-hard button {
         min-width: 6rem;
-        margin: 1rem;
     }
 
     .button-style,
     .button-style:hover {
         padding: 8px 20px;
-    }
-
-    .button-style {
-        font-size: 1em;
-    }
-
-    .button-style:hover {
-        font-size: 1.3em;
     }
 
     .start-page {
@@ -672,12 +637,12 @@ input[type="text"]::placeholder {
         margin-bottom: 2rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 1.8em;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 2.8em;
         box-shadow: -9px 9px 0px #6F61C0;
     }
@@ -693,7 +658,6 @@ input[type="text"]::placeholder {
 
     .difficulty-levels {
         flex-direction: row;
-        font-size: 1.4em;
         gap: 0rem;
         margin: 0rem;
     }
@@ -743,7 +707,6 @@ input[type="text"]::placeholder {
     }
 
     .bottom-bar {
-        margin-bottom: 2rem;
         font-size: 1.6em;
         width: 80%;
     }
@@ -761,12 +724,12 @@ input[type="text"]::placeholder {
         margin-bottom: 2rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 2em;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 3em;
         box-shadow: -9px 9px 0px #6F61C0;
     }
@@ -832,7 +795,6 @@ input[type="text"]::placeholder {
     }
 
     .bottom-bar {
-        margin-bottom: 2rem;
         font-size: 2em;
         width: 80%;
     }
@@ -850,14 +812,17 @@ input[type="text"]::placeholder {
         margin-bottom: 2.5rem;
     }
 
-    button[type="submit"] {
-        font-size: 2.4em;
+    .button-style {
+        font-size: 1.4em;
         box-shadow: -11px 11px 0px #6F61C0;
+        padding: 8px 15px;
     }
 
-    button[type="submit"]:hover {
-        font-size: 3.2em;
+
+    .button-style:hover {
+        font-size: 1.7em;
         box-shadow: -9px 9px 0px #6F61C0;
+        padding: 8px 15px;
     }
 
     #username-form {
@@ -896,16 +861,6 @@ input[type="text"]::placeholder {
     .div-hard button {
         min-width: 8rem;
     }
-
-    .button-style {
-        font-size: 1.4em;
-        padding: 8px 15px;
-    }
-
-    .button-style:hover {
-        font-size: 1.7em;
-        padding: 8px 15px;
-    }
 }
 
 @media (min-width: 1050px) and (max-width: 1052px) and (min-height: 1679px) and (max-height: 1682px) and (orientation: portrait) {
@@ -930,7 +885,6 @@ input[type="text"]::placeholder {
     }
 
     .bottom-bar {
-        margin-bottom: 2rem;
         font-size: 2.3em;
         width: 80%;
     }
@@ -948,13 +902,15 @@ input[type="text"]::placeholder {
         margin-bottom: 2.5rem;
     }
 
-    button[type="submit"] {
-        font-size: 2.4em;
+    .button-style {
+        font-size: 1.5em;
+        padding: 8px 15px;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
-        font-size: 3.2em;
+    .button-style:hover {
+        font-size: 1.8em;
+        padding: 8px 15px;
         box-shadow: -9px 9px 0px #6F61C0;
     }
 
@@ -994,16 +950,6 @@ input[type="text"]::placeholder {
     .div-hard button {
         min-width: 8rem;
     }
-
-    .button-style {
-        font-size: 1.5em;
-        padding: 8px 15px;
-    }
-
-    .button-style:hover {
-        font-size: 1.8em;
-        padding: 8px 15px;
-    }
 }
 
 @media (min-width: 1078px) and (min-height: 1918px) and (orientation: portrait) {
@@ -1028,7 +974,6 @@ input[type="text"]::placeholder {
     }
 
     .bottom-bar {
-        margin-bottom: 2rem;
         font-size: 2.5em;
         width: 80%;
     }
@@ -1046,13 +991,13 @@ input[type="text"]::placeholder {
         margin-bottom: 2.5rem;
     }
 
-    button[type="submit"] {
-        font-size: 2.3em;
+    .button-style {
+        font-size: 1.8em;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
-        font-size: 3.3em;
+    .button-style:hover {
+        font-size: 2em;
         box-shadow: -9px 9px 0px #6F61C0;
     }
 
@@ -1081,14 +1026,6 @@ input[type="text"]::placeholder {
 
     .r-and-d-flexbox {
         gap: 2rem;
-    }
-
-    .button-style {
-        font-size: 1.8em;
-    }
-
-    .button-style:hover {
-        font-size: 2em;
     }
 }
 
@@ -1122,12 +1059,14 @@ input[type="text"]::placeholder {
         margin-bottom: 0.6rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 0.6em;
+        padding: 8px 10px;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 0.9em;
+        padding: 8px 10px;
     }
 
     .top-icons {
@@ -1169,7 +1108,6 @@ input[type="text"]::placeholder {
     .difficulty-levels {
         flex-direction: row;
         font-size: 0.7em;
-        align-items: center;
         gap: 0rem;
         margin: 0rem;
     }
@@ -1179,11 +1117,6 @@ input[type="text"]::placeholder {
     .div-hard button {
         min-width: 3rem;
         margin: 0.5rem;
-    }
-
-    .button-style,
-    .button-style:hover {
-        padding: 8px 10px;
     }
 
     .rules-title h2,
@@ -1226,12 +1159,12 @@ input[type="text"]::placeholder {
         margin-bottom: 0.6rem;
     }
 
-    button[type="submit"] {
-        font-size: 0.8em;
+    .button-style {
+        font-size: 0.6em;
     }
 
-    button[type="submit"]:hover {
-        font-size: 1.1em;
+    .button-style:hover {
+        font-size: 0.9em;
     }
 
     .top-icons {
@@ -1265,14 +1198,6 @@ input[type="text"]::placeholder {
         padding: 0.1rem 1.5rem;
         font-size: 0.75em;
         margin-top: 0rem;
-    }
-
-    .button-style {
-        font-size: 0.6em;
-    }
-
-    .button-style:hover {
-        font-size: 0.9em;
     }
 
     .r-and-d-flexbox {
@@ -1322,11 +1247,11 @@ input[type="text"]::placeholder {
         margin-bottom: 0.6rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 1.1em;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 1.4em;
     }
 
@@ -1394,11 +1319,11 @@ input[type="text"]::placeholder {
         margin-bottom: 0.6rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 1.4em;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 1.7em;
     }
 
@@ -1478,13 +1403,13 @@ input[type="text"]::placeholder {
         margin-bottom: 2.5rem;
     }
 
-    button[type="submit"] {
-        font-size: 2em;
+    .button-style {
+        font-size: 1.4em;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
-        font-size: 2.3em;
+    .button-style:hover {
+        font-size: 1.7em;
         box-shadow: -9px 9px 0px #6F61C0;
     }
 
@@ -1499,7 +1424,6 @@ input[type="text"]::placeholder {
 
     .difficulty-levels {
         flex-direction: row;
-        font-size: 1.4em;
         gap: 0rem;
     }
 
@@ -1523,14 +1447,6 @@ input[type="text"]::placeholder {
     .div-medium button,
     .div-hard button {
         min-width: 8rem;
-    }
-
-    .button-style {
-        font-size: 1.4em;
-    }
-
-    .button-style:hover {
-        font-size: 1.7em;
     }
 }
 
@@ -1578,12 +1494,12 @@ input[type="text"]::placeholder {
         margin-bottom: 2.5rem;
     }
 
-    button[type="submit"] {
+    .button-style {
         font-size: 2em;
         box-shadow: -11px 11px 0px #6F61C0;
     }
 
-    button[type="submit"]:hover {
+    .button-style:hover {
         font-size: 2.3em;
         box-shadow: -9px 9px 0px #6F61C0;
     }
