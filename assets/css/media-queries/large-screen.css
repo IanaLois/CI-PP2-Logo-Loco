@@ -1,0 +1,87 @@
+/* ---------------------------------------------- Media Queries: Large Screen */
+
+@media (min-width: 1918px) and (min-height: 1022px) and (orientation: landscape) {
+
+    p {
+        font-size: 2.6em;
+    }
+
+    .start-page {
+        gap: 2.2rem;
+        height: auto;
+    }
+
+    .game-container {
+        height: 75%;
+        padding: 2.5rem;
+    }
+
+    .game-title {
+        margin: 0 11rem;
+    }
+
+    .game-title h1 {
+        font-size: 4.6em;
+    }
+
+    .bottom-bar {
+        margin-bottom: 2.4rem;
+        font-size: 1.8em;
+        width: 80%;
+        gap: 4rem;
+    }
+
+    .top-icons {
+        font-size: 3.5em;
+    }
+
+    label {
+        font-size: 2.4em;
+    }
+
+    input[type="text"] {
+        font-size: 2.4em;
+        margin-bottom: 2.5rem;
+    }
+
+    .button-style {
+        font-size: 1.8em;
+        box-shadow: -11px 11px 0px #6F61C0;
+    }
+
+    .button-style:hover {
+        font-size: 2.1em;
+        box-shadow: -9px 9px 0px #6F61C0;
+    }
+
+    #username-form {
+        max-width: 34rem;
+    }
+
+    label {
+        margin-bottom: 2.2rem;
+        margin-top: 1.2rem;
+    }
+
+    .difficulty-title {
+        margin-top: 1rem;
+    }
+
+    .difficulty-levels {
+        flex-direction: row;
+    }
+
+    .r-and-d-flexbox {
+        margin: 1.5rem;
+    }
+
+    .rules-description p {
+        font-size: 1.8em;
+        padding: 0.2rem;
+    }
+
+    .rules-title h2,
+    .difficulty-title h2 {
+        font-size: 3em;
+    }
+}
