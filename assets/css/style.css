@@ -81,6 +81,10 @@ p {
     color: #000;
 }
 
+.top-icons a {
+    color: #000;
+}
+
 /* ------------------------------------------------------------------- Footer */
 
 .bottom-bar {
@@ -186,7 +190,6 @@ input[type="text"] {
     color: #6f61c0;
     font-weight: 800;
     text-align: center;
-    text-transform: uppercase;
     font-size: 1.4em;
     font-family: "REM", sans-serif;
 }
@@ -274,6 +277,12 @@ input[type="text"]::placeholder {
 .button-style:hover {
     box-shadow: -3px 3px 0px #6F61C0;
     font-size: 1.3em;
+}
+
+/* ----------------------------------------------------------- Username Input */
+#username-display {
+    letter-spacing: 0rem;
+    margin-left: -1rem;
 }
 
 /* ------------------------------------------------------------ Media Queries */

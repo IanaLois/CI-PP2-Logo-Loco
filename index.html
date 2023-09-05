@@ -24,13 +24,14 @@
         <div class="game-container">
             <div class="top-icons">
                 <div class="home-icon">
-                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
                 </div>
                 <div class="highscore-icon">
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="user-icon">
                     <i class="fa-solid fa-user"></i>
+                    <span id="username-display"></span>
                 </div>
             </div>
             <div class="start-page">
@@ -41,7 +42,8 @@
                 <p>How well do you know your brand logos?</p>
                 <form id="username-form">
                     <label for="username">Please enter your name</label>
-                    <input type="text" id="username" placeholder="Name" required>
+                    <input type="text" id="username" placeholder="Name" required pattern="[a-zA-Z0-9_-]+"
+                        maxlength="12">
                     <button class="button-style" role="button" aria-label="Start Game" type="submit">Start</button>
                 </form>
             </div>
