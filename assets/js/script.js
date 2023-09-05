@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const usernameForm = document.getElementById('username-form');
     const usernameInput = document.getElementById('username');
     const usernameDisplay = document.getElementById('username-display');
+    const invalidUsername = document.getElementById('username-alert');
 
-    /* Displays username input once it passes string validation of only letters,
-     numbers and special characters "-" or "_" and hides the starting 
-     home page by proceeding to the Rules and Difficulty page */
+    /* Displays an error message if username input fails to pass string validation of only letters,
+     numbers and special characters "-" or "_". 
+     Hides the starting home page by proceeding to the Rules and Difficulty page
+      */
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
             Rules.style.display = 'block';
             Difficulty.style.display = 'block';
         } else {
-            alert('Your username can only include letters, numbers, hyphens, or underscores');
+            invalidUsername.style.display = 'block';
         }
     });
 });
