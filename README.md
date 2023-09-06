@@ -1,11 +1,18 @@
 # Logo Loco
 
+<img src="./assets/images/logo-loco-main-logo.png"
+alt="Main Logo" width="40%" height="40%">
+
 <br>
+
+Welcome to Logo Loco, the ultimate brand logo quiz game! 
+
+Dive into an immersive journey to challenge your brand logo knowledge and recognition skills in the most engaging and visually stimulating way. In a world brimming with countless logos that surround us every day, Logo Loco was designed with a dual purpose: to enhance awareness of iconic brands and to offer a fun and nostalgic gaming experience.
+
+## Design
 
 <img src="./assets/images/ui-am-i-responsive.png"
 alt="Am I Responsive Image" width="70%" height="70%">
-
-## Design
 
 ### Colors
 
@@ -26,24 +33,11 @@ alt="Color Palette" width="60%" height="60%">
 
 <br>
 
-The color scheme for the project was obtained from [Color Hunt](https://colorhunt.co/).
-This palette was chosen because it has a cool and retro aesthetic that
-encourages a fun gaming experience while also evoking nostalgia, as if users
-were playing an old favorite childhood game. The colors also evoke happy tones
-creating an environment in which users can feel at ease because they are already
-racing against the clock and don't need to be affected by colors that connote
-danger and warning like red, orange and yellow.
+The color scheme for the project was obtained from [Color Hunt](https://colorhunt.co/). This palette was chosen because it has a cool and retro aesthetic that encourages a fun gaming experience while also evoking nostalgia, as if users were playing an old favorite childhood game. The colors also evoke happy tones creating an environment in which users can feel at ease because they are already racing against the clock and don't need to be affected by colors that connote danger and warning like red, orange and yellow.
 
 ### Fonts
 
-[Google Fonts](https://fonts.google.com/) was used to generate the font family
-"REM" and in the event that it doesn't load, it will default to "sans-serif".
-REM was used throughout the project with various font weights 500 and 900.
-REM was chosen because of its clarity and polished appearance in all weights.
-As the project's name implies, it's a "Logo Loco" multiple choice quiz with a
-lot of colorful images to look at and answers to choose from, so I didn't want
-to overcomplicate the font style and overwhelm the users. The REM font will
-provide users a better gaming experience without straining their eyes or causing
+[Google Fonts](https://fonts.google.com/) was used to generate the font family "REM" and in the event that it doesn't load, it will default to "sans-serif". REM was used throughout the project with various font weights 500 and 900. REM was chosen because of its clarity and polished appearance in all weights. As the project's name implies, it's a "Logo Loco" multiple choice quiz with a lot of colorful images to look at and answers to choose from, so I didn't want to overcomplicate the font style and overwhelm the users. The REM font will provide users a better gaming experience without straining their eyes or causing
 them to lose focus on the game.
 
 ## Wireframes
