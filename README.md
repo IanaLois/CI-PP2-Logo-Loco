@@ -318,3 +318,15 @@ alt="Small Screen Feedback" width="30%" height="30%">
 * [GitHub](https://github.com/) - Repositories
 * [Color Hunt](https://colorhunt.co/) - Color Palette
 * [Ui.Dev](https://ui.dev/amiresponsive) - Responsive Sample Image
+
+## Credits
+
+### Content
+
+* Allow some HTML elements in markdown lint rule MD033 was taken from [Stack Overflow](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
+* Set up device orientation in media queries was taken from [Stack Overflow](https://stackoverflow.com/questions/23273953/how-do-i-get-responsive-css-to-fit-the-viewport-when-switching-between-portrait)
+* Implement string validation in javascript to allow certain characters was taken from [Stack Overflow](https://stackoverflow.com/questions/67310617/javascript-check-if-string-contains-only-letters-numbers-whitespace-and-spec) and [Stack Overflow](https://stackoverflow.com/questions/74473909/regex-to-accept-special-character-only-in-presence-of-alphabets-or-numeric-value)
+* Instructions on how to modify image size in markdown were taken from [Linux Hint](https://linuxhint.com/add-images-markdown-modify-image-size/#:~:text=For%20Modifying%20Image%20Size%20in%20Markdown%3A&text=We%20can%20change%20the%20size,of%20the%20image%20in%20Markdown)
+* Instructions on how to create the link underline animation were taken from [Tobias Ahlin](https://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
+* All icons on this webpage were taken from [Font Awesome](https://fontawesome.com/)
+* All other enquiries and assistance were answered and acquired from [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/)
