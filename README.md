@@ -308,3 +308,13 @@ alt="Small Screen Feedback" width="30%" height="30%">
 </details>
 
 <br>
+
+## Technology Used
+
+* HTML, CSS & Javascript.
+* [Google Fonts](https://fonts.google.com/) - Rem Font Family
+* [Font Awesome](https://fontawesome.com/) - Logos used
+* [Codeanywhere](https://codeanywhere.com/) - Cloud IDE
+* [GitHub](https://github.com/) - Repositories
+* [Color Hunt](https://colorhunt.co/) - Color Palette
+* [Ui.Dev](https://ui.dev/amiresponsive) - Responsive Sample Image
