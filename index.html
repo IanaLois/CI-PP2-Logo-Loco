@@ -112,14 +112,49 @@
                 </div>
             </div>
             <div class="game-page">
-                <div class="correct-answer">
-                    <i class="fa-regular fa-face-laugh-wink"></i>
+                <div class="t-q-s-flexbox">
+                    <div class="timer">
+                        <p>Time: <span id="timer-display">10s</span></p>
+                    </div>
+                    <div class="question">
+                        <p>Question 1: What is this brand logo?</p>
+                    </div>
+                    <div class="score">
+                        <p>Score: <span id="score-display">0</span></p>
+                    </div>
                 </div>
-                <div class="wrong-answer">
-                    <i class="fa-regular fa-face-sad-cry"></i>
+                <div class="answer-options">
+                    <div class="top-options">
+                        <button class="option">Option A</button>
+                        <button class="option">Option B</button>
+                    </div>
+                    <div class="bottom-options">
+                        <button class="option">Option C</button>
+                        <button class="option">Option D</button>
+                    </div>
                 </div>
-                <div class="timer-expired">
-                    <i class="fa-regular fa-face-grimace"></i>
+                <div class="answer-results">
+                    <div class="correct-answer">
+                        <i class="fa-regular fa-face-laugh-wink"></i>
+                        <p>Well Done! That was correct! +5 Points</p>
+                    </div>
+                    <div class="next-question" style="display:none">
+                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    </div>
+                    <div class="wrong-answer">
+                        <i class="fa-regular fa-face-sad-cry"></i>
+                        <p>Oh no! That was incorrect! -5 Points</p>
+                    </div>
+                    <div class="next-question" style="display:none">
+                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    </div>
+                    <div class="timer-expired">
+                        <i class="fa-regular fa-face-grimace"></i>
+                        <p>Whoops! The timer ran out! -10 Points</p>
+                    </div>
+                    <div class="next-question" style="display:none">
+                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    </div>
                 </div>
             </div>
             <div class="end-page">

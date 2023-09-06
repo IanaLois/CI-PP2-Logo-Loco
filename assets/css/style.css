@@ -331,3 +331,37 @@ input[type="text"]::placeholder {
 #username-alert p {
     font-size: 1em;
 }
+
+/* ---------------------------------------- Timer, Question, and Score Layout */
+
+.t-q-s-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15rem;
+}
+
+/* ----------------------------------------------------- Answer Options Layout*/
+
+.answer-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+
+.top-options {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    gap: 5rem;
+}
+
+.bottom-options {
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    gap: 5rem;
+}
