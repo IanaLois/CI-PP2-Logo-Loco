@@ -1,5 +1,10 @@
 # Logo Loco
 
+<br>
+
+<img src="./assets/images/ui-am-i-responsive.png"
+alt="Am I Responsive Image" width="70%" height="70%">
+
 ## Design
 
 ### Colors
