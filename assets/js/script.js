@@ -3,22 +3,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const usernameForm = document.getElementById('username-form');
     const usernameInput = document.getElementById('username');
     const usernameDisplay = document.getElementById('username-display');
-    const invalidUsername = document.getElementById('username-alert');
     const startPage = document.querySelector('.start-page');
     const rulesAndDifficulty = document.querySelector('.rules-and-difficulty');
     const levelDisplay = document.getElementById('level-display');
     const difficultyButtons = document.querySelectorAll('.difficulty-levels .button-style');
     const gamePage = document.querySelector('.game-page');
 
-    /* Displays an error message if username input fails to pass string validation of only letters,
-       numbers and special characters "-" or "_". Hides starting Home page by 
-       proceeding to Rules and Difficulty page. */
+    /* Once the user enters a valid username the starting Home page is hidden
+    and proceeds to Rules and Difficulty page. */
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
         const enteredUsername = usernameInput.value;
 
-        if (/^[a-zA-Z0-9_-]+$/.test(enteredUsername)) {
+        if (enteredUsername) {
             usernameDisplay.textContent = enteredUsername;
 
             startPage.style.display = 'none';
@@ -39,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         } else {
-            invalidUsername.style.display = 'block';
+            startPage.style.display = 'block';
+            rulesAndDifficulty.style.display = 'none';
+            gamePage.style.display = 'none';
         }
     });
 });
