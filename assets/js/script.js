@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const invalidUsername = document.getElementById('username-alert');
     const startPage = document.querySelector('.start-page');
     const rulesAndDifficulty = document.querySelector('.rules-and-difficulty');
-    const Rules = document.querySelector('.rules');
-    const Difficulty = document.querySelector('.choose-difficulty');
     const levelDisplay = document.getElementById('level-display');
     const difficultyButtons = document.querySelectorAll('.difficulty-levels .button-style');
     const gamePage = document.querySelector('.game-page');
@@ -25,8 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             startPage.style.display = 'none';
             rulesAndDifficulty.style.display = 'block';
-            Rules.style.display = 'block';
-            Difficulty.style.display = 'block';
 
             /* Once the game mode, easy, medium, or hard is chosen, it will be shown
                alongside the default icons. Hides Rules and Difficulty page by 
@@ -39,8 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     levelDisplay.textContent = `${selectedLevel}`;
                     levelDisplay.classList.add('btn-level-selected');
                     rulesAndDifficulty.style.display = 'none';
-                    Rules.style.display = 'none';
-                    Difficulty.style.display = 'none';
                     gamePage.style.display = 'block';
                 });
             }

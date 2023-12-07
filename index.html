@@ -20,14 +20,11 @@
 <body>
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row mt-2">
                 <div class="col top-icons">
                     <div class="icons-left">
                         <div class="home-icon">
                             <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                        </div>
-                        <div class="highscore-icon">
-                            <i class="fa-solid fa-trophy"></i>
                         </div>
                         <div class="user-icon">
                             <i class="fa-solid fa-user"></i>
@@ -39,8 +36,8 @@
                     <div id="level-display"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="start-page">
+            <div class="row mt-2">
+                <div class="col start-page">
                     <p>Welcome to</p>
                     <div class="game-title">
                         <h1>Logo Loco</h1>
@@ -61,52 +58,52 @@
                         </p>
                     </div>
                 </div>
-                <div class="rules-and-difficulty">
-                    <div class="r-and-d-flexbox">
-                        <div class="rules">
-                            <div class="r-flexbox">
-                                <div class="rules-title">
+                <div class="col rules-and-difficulty">
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-xxl flex-xxl-column rules-title d-flex justify-content-center">
                                     <h2>How to play</h2>
                                 </div>
-                                <div class="rules-description">
-                                    <p>
+                                <div class="col-xxl flex-xxl-column rules-description">
+                                    <p class="col">
                                         Choose the correct answer from 4 options before the timer
                                         runs out.
                                     </p>
-                                    <p>
+                                    <p class="col">
                                         Correct answers will get you 5 points. Incorrect answers
                                         will cost you 5 points. If timer expires, you lose 10
                                         points!
                                     </p>
-                                    <p>
+                                    <p class="col">
                                         There are 20 questions to answer at each difficulty level.
                                     </p>
-                                    <p>
+                                    <p class="col">
                                         Easy mode has a 10 second timer, Medium has an 8 second
                                         timer, and Hard only has 5 seconds.
                                     </p>
-                                    <p>Good luck and go Logo Loco!</p>
+                                    <p class="col">Good luck and go Logo Loco!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="choose-difficulty">
-                            <div class="d-flexbox">
-                                <div class="difficulty-title">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-xxl flex-xxl-column difficulty-title d-flex justify-content-center">
                                     <h2>Choose Difficulty</h2>
                                 </div>
-                                <div class="difficulty-levels">
-                                    <div class="div-easy">
-                                        <button class="button-style" role="button" aria-label="Easy mode">
+                                <div class="col-xxl flex-xxl-column difficulty-levels">
+                                    <div class="row div-easy">
+                                        <button class="col button-style" role="button" aria-label="Easy mode">
                                             Easy
                                         </button>
                                     </div>
-                                    <div class="div-medium">
-                                        <button class="button-style" role="button" aria-label="Medium mode">
+                                    <div class="row div-medium">
+                                        <button class="col button-style" role="button" aria-label="Medium mode">
                                             Medium
                                         </button>
                                     </div>
-                                    <div class="div-hard">
-                                        <button class="button-style" role="button" aria-label="Hard mode">
+                                    <div class="row div-hard">
+                                        <button class="col button-style" role="button" aria-label="Hard mode">
                                             Hard
                                         </button>
                                     </div>
@@ -115,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="game-page">
+                <div class="col game-page">
                     <div class="t-q-s-flexbox">
                         <div class="timer">
                             <i class="fa-regular fa-clock t-s-icon"></i>
@@ -165,32 +162,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="end-page">
-                    <i class="fa-solid fa-medal"></i>
-                </div>
-                <div class="highscores">
-                    <h1>Highscores</h1>
-                    <h2>Here are the Top 5 most logo loco!</h2>
-                    <i class="fa-solid fa-medal"></i>
-                    <i class="fa-solid fa-medal"></i>
-                    <i class="fa-solid fa-medal"></i>
-                    <i class="fa-solid fa-medal"></i>
+                <div class="col end-page">
                     <i class="fa-solid fa-medal"></i>
                 </div>
                 <div class="feedback">
                     <i class="fa-regular fa-comments"></i>
                 </div>
             </div>
+            <hr>
+            <div class="row mt-2">
+                <div class="col bottom-bar">
+                    <span>
+                        <a href="#" id="feedback-link">Help us improve! <i class="fa-regular fa-comments"></i></a>
+                    </span>
+                </div>
+                <div class="col bottom-bar">
+                    <span>
+                        <p>
+                        <i class="fa-regular fa-copyright"></i> Copyright | Logo Loco 2023
+                        </p>
+                    </span>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <div class="bottom-bar">
-            <a href="#" id="feedback-link">Help us improve! <i class="fa-regular fa-comments"></i></a>
-            <p>
-                <i class="fa-regular fa-copyright"></i> Copyright | Logo Loco 2023
-            </p>
-        </div>
-    </footer>
 
     <!--Link to Font Awesome-->
     <script src="https://kit.fontawesome.com/7216a39cef.js" crossorigin="anonymous"></script>

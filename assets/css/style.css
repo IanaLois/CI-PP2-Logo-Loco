@@ -31,9 +31,7 @@ body {
 .timer-expired,
 .end-page,
 .highscores,
-.feedback,
-.rules,
-.choose-difficulty {
+.feedback {
     display: none;
 }
 
@@ -55,23 +53,6 @@ body {
 
 .bottom-bar {
     opacity: 0.7;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-bottom: 2rem;
-    align-items: center;
-}
-
-.bottom-bar p {
-    text-transform: uppercase;
-    font-size: 1.1em;
 }
 
 /* ------------------------------------------------------------ Feedback link */
@@ -108,23 +89,15 @@ body {
     padding: 1rem;
     height: 100%;
     gap: 1.3rem;
-    align-self: center;
     justify-content: center;
+    align-items: center;
 }
 
 .game-title {
     background: linear-gradient(45deg, #6F61C0, #A084E8, #8BE8E5, #D5FFE4);
     padding: 10px;
     border-radius: 70px;
-    margin: 0 3rem;
-}
-
-.game-title h1 {
-    font-size: 3.5em;
-}
-
-.game-page h2 {
-    font-size: 1.5em;
+    max-width: 12rem;
 }
 
 /* ------------------------------------------------------------ Username Form */
@@ -173,53 +146,23 @@ input[type="text"]::placeholder {
     font-family: "REM", sans-serif;
 }
 
-/* -------------------------------------------------------------------- Rules */
-
-.r-and-d-flexbox {
-    display: flex;
-    margin: 2rem;
-    flex-wrap: wrap;
-}
-
-.r-flexbox,
-.d-flexbox {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.rules-description p {
-    padding: 0.2rem;
-    margin-top: 0.6rem;
-    font-size: 1.1em;
-}
-
-.r-and-d-flexbox>.rules,
-.r-and-d-flexbox>.choose-difficulty {
-    flex: 1;
-    flex-basis: calc(50% - 1.5rem);
-}
+/* ----------------------------------------------------- Rules and Difficulty */
 
 .rules-title h2,
 .difficulty-title h2 {
-    font-size: 2em;
+    max-width: 17rem;
     text-decoration: underline;
 }
-
-/* --------------------------------------------------------------- Difficulty */
 
 .div-easy button,
 .div-medium button,
 .div-hard button {
     margin: 1rem;
-    min-width: 9rem;
+    min-width: 7rem;
 }
 
 .difficulty-levels {
     display: flex;
-    font-size: 1.4em;
-    gap: 1rem;
-    margin: 1rem 0rem;
     flex-direction: column;
     align-items: center;
 }
@@ -231,18 +174,8 @@ input[type="text"]::placeholder {
     color: #000;
     padding: 8px 25px;
     border-radius: 5px;
-    cursor: pointer;
-    font-weight: 900;
-    box-shadow: -5px 5px 0px #6F61C0;
-    transition: all 0.3s ease-in-out;
-    font-size: 1em;
     text-transform: uppercase;
-    font-family: "REM", sans-serif;
-}
-
-.button-style:hover {
-    box-shadow: -3px 3px 0px #6F61C0;
-    font-size: 1.3em;
+    border-color: #A084E8;
 }
 
 .btn-level-selected {
