@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const gamePage = document.querySelector('.game-page');
 
     /* Displays an error message if username input fails to pass string validation of only letters,
-     numbers and special characters "-" or "_". Hides starting Home page by 
-     proceeding to Rules and Difficulty page. */
+       numbers and special characters "-" or "_". Hides starting Home page by 
+       proceeding to Rules and Difficulty page. */
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
             Rules.style.display = 'block';
             Difficulty.style.display = 'block';
 
-            /* Once game mode, easy, medium, or hard is chosen, it will be shown
-             alongside the default icons. Hides Rules and Difficulty page by 
-             proceeding to Game page */
+            /* Once the game mode, easy, medium, or hard is chosen, it will be shown
+               alongside the default icons. Hides Rules and Difficulty page by 
+               proceeding to Game page */
             for (let i = 0; i < difficultyButtons.length; i++) {
                 const button = difficultyButtons[i];
                 button.addEventListener('click', function () {
@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     gamePage.style.display = 'block';
                 });
             }
-
         } else {
             invalidUsername.style.display = 'block';
         }

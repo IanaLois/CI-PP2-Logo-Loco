@@ -1,32 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Logo Loco is a fun, fast-paced 
-    multiple-choice quiz that tests your knowledge of brand logos. The winner 
-    is the player with the most points.">
-    <meta name="keywords" content="Brand logos, brand logos quiz, test your 
-    brand logos knowledge, interactive quiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Logo Loco is a fun, fast-paced multiple-choice quiz that tests your knowledge of brand logos.">
+    <meta name="keywords" content="Brand logos, brand logos quiz, test your brand logos knowledge, interactive quiz">
     <meta name="author" content="Iana Lois Esteron">
-
+    <title>Logo Loco</title>
     <!--Link to CSS-->
     <link rel="stylesheet" href="./assets/css/style.css">
-
-    <!--Link to Small Screen Media Queries-->
-    <link rel="stylesheet" href="./assets/css/media-queries/small-screen.css">
-
-    <!--Link to Medium Screen Media Queries-->
-    <link rel="stylesheet" href="./assets/css/media-queries/medium-screen.css">
-
-    <!--Link to Large Screen Media Queries-->
-    <link rel="stylesheet" href="./assets/css/media-queries/large-screen.css">
-
-    <title>Logo Loco</title>
-
+    <!--Link to Bootstrap's CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -55,12 +42,17 @@
                 <p>How well do you know your brand logos?</p>
                 <form id="username-form">
                     <label for="username">Please enter your name</label>
-                    <input type="text" id="username" placeholder="Name" required pattern="[a-zA-Z0-9_-]+" maxlength="8">
-                    <button class="button-style" role="button" aria-label="Start Game" type="submit">Start</button>
+                    <input type="text" id="username" placeholder="Name" required pattern="[a-zA-Z0-9_-]+"
+                        maxlength="8" />
+                    <button class="button-style" role="button" aria-label="Start Game" type="submit">
+                        Start
+                    </button>
                 </form>
                 <div id="username-alert">
-                    <p>Oops, that username was invalid! Please enter a valid username that only includes letters,
-                        numbers, hyphens, or underscores.</p>
+                    <p>
+                        Oops, that username was invalid! Please enter a valid username
+                        that only includes letters, numbers, hyphens, or underscores.
+                    </p>
                 </div>
             </div>
             <div class="rules-and-difficulty">
@@ -72,22 +64,22 @@
                             </div>
                             <div class="rules-description">
                                 <p>
-                                    Choose the correct answer from 4 options before the timer runs out.
+                                    Choose the correct answer from 4 options before the timer
+                                    runs out.
                                 </p>
                                 <p>
-                                    Correct answers will get you 5 points. Incorrect answers will cost you 5 points. If
-                                    timer expires, you lose 10 points!
+                                    Correct answers will get you 5 points. Incorrect answers
+                                    will cost you 5 points. If timer expires, you lose 10
+                                    points!
                                 </p>
                                 <p>
                                     There are 20 questions to answer at each difficulty level.
                                 </p>
                                 <p>
-                                    Easy mode has a 10 second timer, Medium has an 8 second timer, and Hard only has 5
-                                    seconds.
+                                    Easy mode has a 10 second timer, Medium has an 8 second
+                                    timer, and Hard only has 5 seconds.
                                 </p>
-                                <p>
-                                    Good luck and go Logo Loco!
-                                </p>
+                                <p>Good luck and go Logo Loco!</p>
                             </div>
                         </div>
                     </div>
@@ -98,13 +90,19 @@
                             </div>
                             <div class="difficulty-levels">
                                 <div class="div-easy">
-                                    <button class="button-style" role="button" aria-label="Easy mode">Easy</button>
+                                    <button class="button-style" role="button" aria-label="Easy mode">
+                                        Easy
+                                    </button>
                                 </div>
                                 <div class="div-medium">
-                                    <button class="button-style" role="button" aria-label="Medium mode">Medium</button>
+                                    <button class="button-style" role="button" aria-label="Medium mode">
+                                        Medium
+                                    </button>
                                 </div>
                                 <div class="div-hard">
-                                    <button class="button-style" role="button" aria-label="Hard mode">Hard</button>
+                                    <button class="button-style" role="button" aria-label="Hard mode">
+                                        Hard
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -140,22 +138,28 @@
                         <i class="fa-regular fa-face-laugh-wink"></i>
                         <p>Well Done! That was correct! +5 Points</p>
                     </div>
-                    <div class="next-question" style="display:none">
-                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    <div class="next-question" style="display: none">
+                        <button class="button-style" role="button" aria-label="Next Question">
+                            Next
+                        </button>
                     </div>
                     <div class="wrong-answer">
                         <i class="fa-regular fa-face-sad-cry"></i>
                         <p>Oh no! That was incorrect! -5 Points</p>
                     </div>
-                    <div class="next-question" style="display:none">
-                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    <div class="next-question" style="display: none">
+                        <button class="button-style" role="button" aria-label="Next Question">
+                            Next
+                        </button>
                     </div>
                     <div class="timer-expired">
                         <i class="fa-regular fa-face-grimace"></i>
                         <p>Whoops! The timer ran out! -10 Points</p>
                     </div>
-                    <div class="next-question" style="display:none">
-                        <button class="button-style" role="button" aria-label="Next Question">Next</button>
+                    <div class="next-question" style="display: none">
+                        <button class="button-style" role="button" aria-label="Next Question">
+                            Next
+                        </button>
                     </div>
                 </div>
             </div>
@@ -179,15 +183,20 @@
     <footer>
         <div class="bottom-bar">
             <a href="#" id="feedback-link">Help us improve! <i class="fa-regular fa-comments"></i></a>
-            <p><i class="fa-regular fa-copyright"></i> Copyright | Logo Loco 2023 </p>
+            <p>
+                <i class="fa-regular fa-copyright"></i> Copyright | Logo Loco 2023
+            </p>
         </div>
     </footer>
 
     <!--Link to Font Awesome-->
     <script src="https://kit.fontawesome.com/7216a39cef.js" crossorigin="anonymous"></script>
-
     <!--Link to Javascript-->
     <script src="./assets/js/script.js"></script>
+    <!--Link to Bootstrap's JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
