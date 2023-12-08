@@ -22,15 +22,18 @@
         <div class="container">
             <div class="row mt-2">
                 <div class="col top-icons">
-                    <div class="icons-left">
-                        <div class="home-icon">
-                            <a href="index.html"><i class="fa-solid fa-house"></i></a>
-                        </div>
-                        <div class="user-icon">
-                            <i class="fa-solid fa-user"></i>
-                            <span id="username-display"></span>
-                        </div>
+                    <div class="home-icon">
+                        <a href="index.html"><i class="fa-solid fa-house"></i></a>
                     </div>
+                </div>
+                <div class="col top-icons">
+                    <div class="user-icon">
+                        <i class="fa-solid fa-user"></i>
+                        <span id="username-display"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <p><span id="score-display"><i class="fa-solid fa-trophy"></i> 0</span></p>
                 </div>
                 <div class="col questionDisplay">
                     <div class="row">
@@ -92,12 +95,8 @@
                 </div>
                 <div class="col game-page">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col">
                             <img id="question">
-                        </div>
-                        <div class="col-6 score">
-                            <i class="fa-solid fa-medal s-icon"></i>
-                            <p><span id="score-display">0</span></p>
                         </div>
                     </div>
                     <div class="row answer-options d-flex justify-content-center">

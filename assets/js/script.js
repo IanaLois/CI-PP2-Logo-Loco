@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const usernameForm = document.getElementById('username-form');
     const usernameInput = document.getElementById('username');
     const usernameDisplay = document.getElementById('username-display');
+    const userIconDisplay = document.querySelector('.user-icon');
     const startPage = document.querySelector('.start-page');
     const rulesAndPlayNow = document.querySelector('.rules-and-playnow');
     const playNowButton = document.getElementById('play-now-button');
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const questionCounter = document.getElementById('questionNumber');
     const logo = document.getElementById('question');
     const answers = document.getElementsByClassName('option');
+    const scoreDisplay = document.getElementById('score-display');
 
     const questions = [
         {
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             logo: 'https://static.vecteezy.com/system/resources/previews/024/455/369/non_2x/the-north-face-brand-symbol-red-logo-clothes-design-icon-abstract-illustration-free-vector.jpg',
             correctAnswer: 'The North Face',
-            answers: ['The Summer Living Company', 'Thomas Sabo', 'The North Face', 'Thermos'],
+            answers: ['Tempest Original', 'Thomas Sabo', 'The North Face', 'Thermos'],
         },
         {
             logo: 'https://quizbash.com/assets/img/games/logo-vansv-r.jpg',
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionNumber = 0;
 
     function getQuestion() {
+        scoreDisplay.style.display = "block";
         questionDisplay.style.display = "block";
         questionCounter.innerHTML = `Question ${questionNumber + 1}`;
         let i = 0;
@@ -154,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (enteredUsername.length) {
             usernameDisplay.textContent = enteredUsername;
             startPage.style.display = 'none';
+            userIconDisplay.style.display = 'block';
             rulesAndPlayNow.style.display = 'block';
 
             playNowButton.addEventListener('click', function () {

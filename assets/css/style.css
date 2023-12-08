@@ -24,8 +24,10 @@ body {
     min-height: 37rem;
 }
 
+.user-icon,
 .rules-and-playnow,
 .questionDisplay,
+#score-display,
 .game-page,
 .correct-answer,
 .wrong-answer,
@@ -35,48 +37,16 @@ body {
 
 .top-icons {
     font-size: 2em;
-    letter-spacing: 0.5em;
 }
 
-.top-icons a {
+.home-icon a {
     color: #000;
-}
-
-.icons-left {
-    display: flex;
-    gap: 10px;
 }
 
 /* ------------------------------------------------------------------- Footer */
 
 .bottom-bar {
     opacity: 0.7;
-}
-
-/* ------------------------------------------------------------ Feedback link */
-
-#feedback-link {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.1em;
-    position: relative;
-}
-
-#feedback-link::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 2.5px;
-    bottom: -2.5px;
-    left: 0;
-    background-color: #000000;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-#feedback-link:hover::before {
-    transform: scaleX(1);
 }
 
 /* --------------------------------------------------------------- Start Page */
@@ -174,7 +144,7 @@ input[type="text"]::placeholder {
     padding: 0 5rem;
 }
 
-/* -------------------------------------------- Button Style and Hover Effect */
+/* ------------------------------------------------------------- Button Style */
 
 .button-style {
     background-color: #A084E8;
@@ -185,35 +155,21 @@ input[type="text"]::placeholder {
     border-color: #A084E8;
 }
 
-.btn-level-selected {
-    background-color: #A084E8;
-    color: #000;
-    padding: 8px 5px;
-    border-radius: 5px;
-    font-weight: 900;
-    box-shadow: -5px 5px 0px #6F61C0;
-    text-transform: uppercase;
-    letter-spacing: 0rem;
-    margin: 0.2rem;
-}
-
 /* ----------------------------------------------------------- Username Input */
 
 #username-display {
     letter-spacing: 0rem;
-    margin-left: -1rem;
 }
 
-/* ---------------------------------------- Timer, Question, and Score Layout */
-
-.score,
-.s-icon {
-    font-size: 2em;
-}
+/* ------------------------------------------------ Question and Score Layout */
 
 #question {
     height: 210px;
     margin: 2rem;
+}
+
+#score-display {
+    font-size: 2em;
 }
 
 #questionNumber {
@@ -231,7 +187,7 @@ input[type="text"]::placeholder {
 
 .option {
     color: #000;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
     font-weight: 900;
     text-transform: uppercase;
@@ -263,7 +219,7 @@ input[type="text"]::placeholder {
     max-width: 19rem !important;
 }
 
-/* Media Queries */
+/* ------------------------------------------------------------ Media Queries */
 
 @media (min-width: 320px) and (max-width:426px) {
     .container {
@@ -272,15 +228,19 @@ input[type="text"]::placeholder {
     }
 
     .rules-p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         padding: 0 0;
     }
 
     .top-icons {
         font-size: 1.8em;
-        letter-spacing: 0.5em;
     }
+
     #questionNumber {
         font-size: 1.8em;
+    }
+    
+    #question {
+        height: 100px;
     }
 }
