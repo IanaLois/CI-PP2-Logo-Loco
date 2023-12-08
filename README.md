@@ -166,7 +166,7 @@ The site was deployed to GitHub Pages. The deployment steps as follows:
 * From the source section drop-down menu, select the **Main** Branch, then click "Save".
 * The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here]()
+The live link can be found [here](https://ianalois.github.io/CI-PP2-Logo-Loco/)
 
 ## Credits
 
