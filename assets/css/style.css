@@ -24,7 +24,7 @@ body {
     min-height: 37rem;
 }
 
-.rules-and-difficulty,
+.rules-and-playnow,
 .game-page,
 .correct-answer,
 .wrong-answer,
@@ -98,6 +98,12 @@ body {
     padding: 10px;
     border-radius: 70px;
     max-width: 12rem;
+    font-style: italic;
+}
+
+.col.start-page>p {
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 /* ------------------------------------------------------------ Username Form */
@@ -146,22 +152,20 @@ input[type="text"]::placeholder {
     font-family: "REM", sans-serif;
 }
 
-/* ----------------------------------------------------- Rules and Difficulty */
+/* ------------------------------------------------------- Rules and Play Now */
 
 .rules-title h2,
-.difficulty-title h2 {
+.get-ready h2 {
     max-width: 17rem;
     text-decoration: underline;
 }
 
-.div-easy button,
-.div-medium button,
-.div-hard button {
+.div-play {
     margin: 1rem;
     min-width: 7rem;
 }
 
-.difficulty-levels {
+.play-now-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -260,6 +264,13 @@ input[type="text"]::placeholder {
 }
 
 /* Media Queries */
+
+@media (min-width: 320px) {
+    .container {
+        max-width: 18rem;
+        min-width: 18rem;
+    }
+}
 
 @media (min-width: 1400px) {
 

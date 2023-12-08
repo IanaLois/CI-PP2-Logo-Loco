@@ -4,9 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const usernameInput = document.getElementById('username');
     const usernameDisplay = document.getElementById('username-display');
     const startPage = document.querySelector('.start-page');
-    const rulesAndDifficulty = document.querySelector('.rules-and-difficulty');
-    const levelDisplay = document.getElementById('level-display');
-    const difficultyButtons = document.querySelectorAll('.difficulty-levels .button-style');
+    const rulesAndPlayNow = document.querySelector('.rules-and-playnow');
+    const playNowButton = document.getElementById('play-now-button');
     const gamePage = document.querySelector('.game-page');
     const questionCounter = document.getElementById('questionNumber');
     const logo = document.getElementById('question');
@@ -143,7 +142,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     /* Once the user enters a valid username the starting Home page is hidden
-        and proceeds to Rules and Difficulty page. */
+        and the screen proceeds to the Rules and Play Now page. */
+
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -152,24 +152,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (enteredUsername.length) {
             usernameDisplay.textContent = enteredUsername;
             startPage.style.display = 'none';
-            rulesAndDifficulty.style.display = 'block';
+            rulesAndPlayNow.style.display = 'block';
 
-            /* Once the game mode, easy, medium, or hard is chosen, it will be shown
-               alongside the default icons. Hides Rules and Difficulty page by 
-               proceeding to Game page */
-            for (let i = 0; i < difficultyButtons.length; i++) {
-                const button = difficultyButtons[i];
-                button.addEventListener('click', function () {
-                    const selectedLevel = button.textContent;
-
-                    levelDisplay.textContent = `${selectedLevel}`;
-                    levelDisplay.classList.add('btn-level-selected');
-                    rulesAndDifficulty.style.display = 'none';
-                    gamePage.style.display = 'block';
-
-                    getQuestion();
-                });
-            }
+            playNowButton.addEventListener('click', function () {
+                rulesAndPlayNow.style.display = 'none';
+                gamePage.style.display = 'block';
+                getQuestion();
+            });
         }
     });
 });
