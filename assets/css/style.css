@@ -232,12 +232,10 @@ input[type="text"]::placeholder {
         padding: 0 0;
     }
 
-    .top-icons {
-        font-size: 1.8em;
-    }
-
-    #questionNumber {
-        font-size: 1.8em;
+    .top-icons,
+    #questionNumber,
+    #score-display {
+        font-size: 1.6em;
     }
 
     #question {

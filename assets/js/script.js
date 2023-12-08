@@ -141,12 +141,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 score = score + 5;
                 scoreDisplay.innerHTML = `<i class="fa-solid fa-trophy"></i> ${score}`;
                 questionNumber++;
-                showFeedback('success', 'You were correct!');
+                showFeedback('success', 'That is correct!');
             } else {
                 score = score - 5;
                 scoreDisplay.innerHTML = `<i class="fa-solid fa-trophy"></i> ${score}`;
                 questionNumber++;
-                showFeedback('error', 'You were wrong!');
+                showFeedback('error', 'Oops! Wrong answer!');
             }
 
             if (questionNumber >= questions.length) {
@@ -157,16 +157,27 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function showFeedback(type, message) {
-        // Implement feedback display logic here
-        console.log(`${type}: ${message}`);
-    }
-
     answersContainer.addEventListener('click', handleAnswerClick);
 
-    /* Once the user enters a valid username the starting Home page is hidden
-            and the screen proceeds to the Rules and Play Now page. */
+    function showFeedback(icon, title) {
+        Swal.fire({
+            position: 'center',
+            icon: icon,
+            title: title,
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            timer: 1500,
+        }).then(() => {
+            if (questionNumber >= questions.length) {
+                // End of game
+            } else {
+                getQuestion();
+            }
+        });
+    }
 
+    /* Once the user enters a valid username the starting Home page is hidden 
+    and the screen proceeds to the Rules and Play Now page. */
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
