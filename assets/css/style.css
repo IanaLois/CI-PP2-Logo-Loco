@@ -261,6 +261,7 @@ input[type="text"]::placeholder {
 /* Media Queries */
 
 @media (min-width: 1400px) {
+
     .col-xxl.difficulty-title.d-flex.justify-content-center,
     .col-xxl.rules-title.d-flex.justify-content-center {
         flex: 0 0 100%;
