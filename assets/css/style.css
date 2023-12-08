@@ -25,13 +25,11 @@ body {
 }
 
 .rules-and-playnow,
+.questionDisplay,
 .game-page,
 .correct-answer,
 .wrong-answer,
-.timer-expired,
-.end-page,
-.highscores,
-.feedback {
+.end-page {
     display: none;
 }
 
@@ -208,16 +206,6 @@ input[type="text"]::placeholder {
 
 /* ---------------------------------------- Timer, Question, and Score Layout */
 
-.q-s-flexbox {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 10rem;
-    margin: 1.5rem;
-}
-
 .score,
 .s-icon {
     font-size: 2em;
@@ -226,6 +214,13 @@ input[type="text"]::placeholder {
 #question {
     height: 210px;
     margin: 2rem;
+}
+
+#questionNumber {
+    font-size: 2em;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 /* ----------------------------------------------------- Answer Options Layout*/
@@ -279,5 +274,13 @@ input[type="text"]::placeholder {
     .rules-p {
         font-size: 1.2rem;
         padding: 0 0;
+    }
+
+    .top-icons {
+        font-size: 1.8em;
+        letter-spacing: 0.5em;
+    }
+    #questionNumber {
+        font-size: 1.8em;
     }
 }

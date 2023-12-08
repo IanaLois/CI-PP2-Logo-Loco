@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const rulesAndPlayNow = document.querySelector('.rules-and-playnow');
     const playNowButton = document.getElementById('play-now-button');
     const gamePage = document.querySelector('.game-page');
+    const questionDisplay = document.querySelector('.questionDisplay')
     const questionCounter = document.getElementById('questionNumber');
     const logo = document.getElementById('question');
     const answers = document.getElementsByClassName('option');
@@ -117,7 +118,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionNumber = 0;
 
     function getQuestion() {
-        questionCounter.innerHTML = questionNumber + 1;
+        questionDisplay.style.display = "block";
+        questionCounter.innerHTML = `Question ${questionNumber + 1}`;
         let i = 0;
 
         logo.src = questions[questionNumber].logo;

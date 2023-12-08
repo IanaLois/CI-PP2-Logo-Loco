@@ -32,6 +32,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="col questionDisplay">
+                    <div class="row">
+                        <p class="col" id="questionNumber"></p>
+                    </div>
+                </div>
             </div>
             <div class="row mt-2">
                 <div class="col start-page">
@@ -86,12 +91,8 @@
                     </div>
                 </div>
                 <div class="col game-page">
-                    <div class="row q-s-flexbox">
+                    <div class="row">
                         <div class="col-6">
-                            <p>
-                                Question
-                            <p id="questionNumber"></p>
-                            </p>
                             <img id="question">
                         </div>
                         <div class="col-6 score">
@@ -124,10 +125,6 @@
                                 Next
                             </button>
                         </div>
-                        <div class="timer-expired">
-                            <i class="fa-regular fa-face-grimace"></i>
-                            <p>Whoops! The timer ran out! -10 Points</p>
-                        </div>
                         <div class="next-question" style="display: none">
                             <button class="button-style" role="button" aria-label="Next Question">
                                 Next
@@ -137,9 +134,6 @@
                 </div>
                 <div class="col end-page">
                     <i class="fa-solid fa-medal"></i>
-                </div>
-                <div class="feedback">
-                    <i class="fa-regular fa-comments"></i>
                 </div>
             </div>
             <hr>
