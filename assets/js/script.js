@@ -8,11 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const rulesAndPlayNow = document.querySelector('.rules-and-playnow');
     const playNowButton = document.getElementById('play-now-button');
     const gamePage = document.querySelector('.game-page');
-    const questionDisplay = document.querySelector('.questionDisplay')
+    const questionDisplay = document.querySelector('.questionDisplay');
     const questionCounter = document.getElementById('questionNumber');
     const logo = document.getElementById('question');
     const answers = document.getElementsByClassName('option');
     const scoreDisplay = document.getElementById('score-display');
+    const answersContainer = document.getElementById('answersContainer');
 
     const questions = [
         {
@@ -117,6 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     ];
 
+    let score = 0;
     let questionNumber = 0;
 
     function getQuestion() {
@@ -130,24 +132,40 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let answer of answers) {
             answer.innerHTML = questions[questionNumber].answers[i];
             i++;
-            answer.addEventListener('click', (event) => {
-                if (
-                    event.target.innerHTML === questions[questionNumber].correctAnswer
-                ) {
-                    console.log('woooooop');
-                    questionNumber++;
-                    if (questionNumber > questions.length) {
-                        console.log('end the game here');
-                    } else {
-                        getQuestion();
-                    }
-                }
-            });
         }
     }
 
+    function handleAnswerClick(event) {
+        if (event.target.classList.contains('option')) {
+            if (event.target.innerHTML === questions[questionNumber].correctAnswer) {
+                score = score + 5;
+                scoreDisplay.innerHTML = `<i class="fa-solid fa-trophy"></i> ${score}`;
+                questionNumber++;
+                showFeedback('success', 'You were correct!');
+            } else {
+                score = score - 5;
+                scoreDisplay.innerHTML = `<i class="fa-solid fa-trophy"></i> ${score}`;
+                questionNumber++;
+                showFeedback('error', 'You were wrong!');
+            }
+
+            if (questionNumber >= questions.length) {
+                console.log('End the game here');
+            } else {
+                getQuestion();
+            }
+        }
+    }
+
+    function showFeedback(type, message) {
+        // Implement feedback display logic here
+        console.log(`${type}: ${message}`);
+    }
+
+    answersContainer.addEventListener('click', handleAnswerClick);
+
     /* Once the user enters a valid username the starting Home page is hidden
-        and the screen proceeds to the Rules and Play Now page. */
+            and the screen proceeds to the Rules and Play Now page. */
 
     usernameForm.addEventListener('submit', function (event) {
         event.preventDefault();
