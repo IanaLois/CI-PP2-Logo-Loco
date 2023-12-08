@@ -199,7 +199,7 @@ input[type="text"]::placeholder {
 
 /* ---------------------------------------- Timer, Question, and Score Layout */
 
-.t-q-s-flexbox {
+.q-s-flexbox {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -209,15 +209,14 @@ input[type="text"]::placeholder {
     margin: 1.5rem;
 }
 
-.timer,
-.score {
-    font-size: 2rem;
+.score,
+.s-icon {
+    font-size: 2em;
 }
 
-.t-s-icon {
-    font-size: 4.5rem;
-    color: #A084E8;
-    text-shadow: 0px 5px 2px #6F61C0;
+#question {
+    height: 210px;
+    margin: 2rem;
 }
 
 /* ----------------------------------------------------- Answer Options Layout*/
@@ -230,32 +229,34 @@ input[type="text"]::placeholder {
     color: #000;
     padding: 10px 15px;
     border-radius: 5px;
-    cursor: pointer;
     font-weight: 900;
-    transition: all 0.3s ease-in-out;
-    font-size: 1.3rem;
     text-transform: uppercase;
     margin: 0.5rem;
+    min-width: 10rem;
 }
 
 .op-a {
     background-color: #e88484;
-    box-shadow: -5px 5px 0px #c06161;
+    border-color: #e88484;
 }
 
 .op-b {
     background-color: #849ce8;
-    box-shadow: -5px 5px 0px #6173c0;
+    border-color: #849ce8;
 }
 
 .op-c {
     background-color: #e8d984;
-    box-shadow: -5px 5px 0px #c0a861;
+    border-color: #e8d984;
 }
 
 .op-d {
     background-color: #84e887;
-    box-shadow: -5px 5px 0px #61c06c;
+    border-color: #84e887;
+}
+
+.col.answer-options.d-flex.justify-content-center {
+    max-width: 19rem !important;
 }
 
 /* Media Queries */
