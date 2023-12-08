@@ -5,13 +5,13 @@ alt="Main Logo" width="40%" height="40%">
 
 <br>
 
-Welcome to Logo Loco, the ultimate brand logo quiz game! 
+Welcome to Logo Loco, the ultimate logo quiz game!
 
-Dive into an immersive journey to challenge your brand logo knowledge and recognition skills in the most engaging and visually stimulating way. In a world brimming with countless logos that surround us every day, Logo Loco was designed with a dual purpose: to enhance awareness of iconic brands and to offer a fun and nostalgic gaming experience.
+Challenge your logo knowledge and recognition skills in the most engaging and visually stimulating way. In a world brimming with countless logos that surround us every day, Logo Loco was designed with a dual purpose: to enhance awareness of iconic brands and to offer a fun and nostalgic gaming experience.
 
 ## Design
 
-<img src="./assets/images/ui-am-i-responsive.png"
+<img src="./assets/images/am-i-responsive.png"
 alt="Am I Responsive Image" width="70%" height="70%">
 
 ### Colors
@@ -33,281 +33,117 @@ alt="Color Palette" width="60%" height="60%">
 
 <br>
 
-The color scheme for the project was obtained from [Color Hunt](https://colorhunt.co/). This palette was chosen because it has a cool and retro aesthetic that encourages a fun gaming experience while also evoking nostalgia, as if users were playing an old favorite childhood game. The colors also evoke happy tones creating an environment in which users can feel at ease because they are already racing against the clock and don't need to be affected by colors that connote danger and warning like red, orange and yellow.
+The color scheme for the project was obtained from [Color Hunt](https://colorhunt.co/). This palette was chosen because it has a cool and retro aesthetic that encourages a fun gaming experience while also evoking nostalgia, as if users were playing an old favorite childhood game.
 
 ### Fonts
 
-[Google Fonts](https://fonts.google.com/) was used to generate the font family "REM" and in the event that it doesn't load, it will default to "sans-serif". REM was used throughout the project with various font weights 500 and 900. REM was chosen because of its clarity and polished appearance in all weights. As the project's name implies, it's a "Logo Loco" multiple choice quiz with a lot of colorful images to look at and answers to choose from, so I didn't want to overcomplicate the font style and overwhelm the users. The REM font will provide users a better gaming experience without straining their eyes or causing
-them to lose focus on the game.
+[Google Fonts](https://fonts.google.com/) was used to generate the font family "REM" and in the event that it doesn't load, it will default to "sans-serif". REM was used throughout the project and was chosen because of its clarity and polished appearance. As the project's name implies, it's a "Logo Loco" multiple choice quiz game with a lot of colours to look at and answers to choose from, so I didn't want to overcomplicate the font style and overwhelm the users.
 
 ## Wireframes
 
-### Laptop & Desktop Screens (Large)
-
 <br>
 
 <details>
-<summary>Start Page</summary>
+<summary>Home Page</summary>
 
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-start-page.png"
-alt="Large Screen Start Page" width="60%" height="60%">
+<img src="./assets/images/homepage-wireframe.png"
+alt="Home Page Wireframe" width="60%" height="60%">
 
 </details>
 
 <details>
-<summary>Rules & Difficulty</summary>
+<summary>Rules & Play Now Page</summary>
+
+<img src="./assets/images/rules-playnow-wireframe.png"
+alt="Rules & Play Now Wireframe" width="60%" height="60%">
 
 <br>
-
-<img src="./assets/images/laptop-wireframes/laptop-rules-difficulty.png"
-alt="Large Screen Rules & Difficulty" width="60%" height="60%">
 
 </details>
 <details>
 <summary>Game Page</summary>
 
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-game-page.png"
-alt="Large Screen Game Page" width="60%" height="60%">
-
-</details>
-<details>
-<summary>Correct Answer</summary>
+<img src="./assets/images/gamepage-wireframe.png"
+alt="Game Page Wireframe" width="60%" height="60%">
 
 <br>
-
-<img src="./assets/images/laptop-wireframes/laptop-correct-answer.png"
-alt="Large Screen Correct Answer" width="60%" height="60%">
-
-</details>
-<details>
-<summary>Wrong Answer</summary>
-
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-wrong-answer.png"
-alt="Large Screen Wrong Answer" width="60%" height="60%">
-
-</details>
-<details>
-<summary>Timer Expired</summary>
-
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-timer-expired.png"
-alt="Large Screen Timer Expired" width="60%" height="60%">
 
 </details>
 <details>
 <summary>End Page</summary>
 
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-end-page.png"
-alt="Large Screen End Page" width="60%" height="60%">
-
-</details>
-<details>
-<summary>Highscores</summary>
-
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-highscores.png"
-alt="Large Screen Highscores" width="60%" height="60%">
-
-</details>
-<details>
-<summary>Feedback</summary>
-
-<br>
-
-<img src="./assets/images/laptop-wireframes/laptop-feedback.png"
-alt="Large Screen Feedback" width="60%" height="60%">
+<img src="./assets/images/endpage-wireframe.png"
+alt="End Page Wireframe" width="60%" height="60%">
 
 </details>
 
 <br>
 
-### Tablet Screens (Medium)
+## Features
 
-<br>
+### Home Page
+* Users are greeted with a visually appealing homepage.
+* A catchy game title "Logo Loco" and a brief welcome message engage users.
+* Users are prompted to enter their name to personalize the experience.
+* Clear instructions and a start button guide users to begin the quiz.
 
-<details>
-<summary>Start Page</summary>
+<img src="./assets/images/homepage.png"
+alt="Home Page" width="60%" height="60%">
 
-<br>
+### Rules and Play Now Page
+* After entering the name, users are taken to the Rules and Play Now page.
+* Concise rules explain how to play the game.
+* A prominent "Play Now" button invites users to start the quiz.
 
-<img src="./assets/images/tablet-wireframes/tablet-start-page.png"
-alt="Medium Screen Start Page" width="40%" height="40%">
+<img src="./assets/images/rules-and-playnow.png"
+alt="Rules and Play Now Page" width="60%" height="60%">
+  
+### Game Page
+* Users are presented with logo images and multiple-choice options.
+* The question number and the user's score are displayed.
+* Users select answers by clicking on the provided options.
+* Immediate feedback is given for correct and incorrect answers using SweetAlert2.
+* The game continues until all questions are answered.
 
-</details>
+<img src="./assets/images/gamepage.png"
+alt="Game Page" width="60%" height="60%">
 
-<details>
-<summary>Rules & Difficulty</summary>
+<img src="./assets/images/gamepage-correct.png"
+alt="Game Page Correct Answer" width="60%" height="60%">
 
-<br>
+<img src="./assets/images/gamepage-incorrect.png"
+alt="Game Page Incorrect Answer" width="60%" height="60%">
 
-<img src="./assets/images/tablet-wireframes/tablet-rules-difficulty.png"
-alt="Medium Screen Rules & Difficulty" width="40%" height="40%">
+### End Page
+* Upon completing the quiz, users are directed to the End Page.
+* The final score is displayed along with a trophy icon for added visual appeal.
+* Users have the option to play the game again with a "Play Again" button.
 
-</details>
-<details>
-<summary>Game Page</summary>
+<img src="./assets/images/endpage.png"
+alt="End Page" width="60%" height="60%">
 
-<br>
+## Testing
 
-<img src="./assets/images/tablet-wireframes/tablet-game-page.png"
-alt="Medium Screen Game Page" width="40%" height="40%">
+### JSHint
 
-</details>
-<details>
-<summary>Correct Answer</summary>
+<img src="./assets/images/js-hint.png"
+alt="JSHint Validator" width="60%" height="60%">
 
-<br>
+* Javascript code was validated and passed with no significant issues.
 
-<img src="./assets/images/tablet-wireframes/tablet-correct-answer.png"
-alt="Medium Screen Correct Answer" width="40%" height="40%">
+### W3C
 
-</details>
-<details>
-<summary>Wrong Answer</summary>
+<img src="./assets/images/w3c.png"
+alt="W3C Validator" width="60%" height="60%">
 
-<br>
+* HTML Code was validated and passed with no significant issues.
 
-<img src="./assets/images/tablet-wireframes/tablet-wrong-answer.png"
-alt="Medium Screen Wrong Answer" width="40%" height="40%">
+### Jigsaw
 
-</details>
-<details>
-<summary>Timer Expired</summary>
+<img src="./assets/images/jigsaw.png"
+alt="Jigsaw Validator" width="60%" height="60%">
 
-<br>
-
-<img src="./assets/images/tablet-wireframes/tablet-timer-expired.png"
-alt="Medium Screen Timer Expired" width="40%" height="40%">
-
-</details>
-<details>
-<summary>End Page</summary>
-
-<br>
-
-<img src="./assets/images/tablet-wireframes/tablet-end-page.png"
-alt="Medium Screen End Page" width="40%" height="40%">
-
-</details>
-<details>
-<summary>Highscores</summary>
-
-<br>
-
-<img src="./assets/images/tablet-wireframes/tablet-highscores.png"
-alt="Medium Screen Highscores" width="40%" height="40%">
-
-</details>
-<details>
-<summary>Feedback</summary>
-
-<br>
-
-<img src="./assets/images/tablet-wireframes/tablet-feedback.png"
-alt="Medium Screen Feedback" width="40%" height="40%">
-
-</details>
-
-<br>
-
-### Phone Screens (Small)
-
-<br>
-
-<details>
-<summary>Start Page</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-start-page.png"
-alt="Small Screen Start Page" width="30%" height="30%">
-
-</details>
-
-<details>
-<summary>Rules & Difficulty</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-rules-difficulty.png"
-alt="Small Screen Rules & Difficulty" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Game Page</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-game-page.png"
-alt="Small Screen Game Page" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Correct Answer</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-correct-answer.png"
-alt="Small Screen Correct Answer" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Wrong Answer</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-wrong-answer.png"
-alt="Small Screen Wrong Answer" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Timer Expired</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-timer-expired.png"
-alt="Small Screen Timer Expired" width="30%" height="30%">
-
-</details>
-<details>
-<summary>End Page</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-end-page.png"
-alt="Small Screen End Page" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Highscores</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-highscores.png"
-alt="Small Screen Highscores" width="30%" height="30%">
-
-</details>
-<details>
-<summary>Feedback</summary>
-
-<br>
-
-<img src="./assets/images/phone-wireframes/phone-feedback.png"
-alt="Small Screen Feedback" width="30%" height="30%">
-
-</details>
-
-<br>
+* CSS Code was validated and passed with no significant issues.
 
 ## Technology Used
 
@@ -317,16 +153,32 @@ alt="Small Screen Feedback" width="30%" height="30%">
 * [Codeanywhere](https://codeanywhere.com/) - Cloud IDE
 * [GitHub](https://github.com/) - Repositories
 * [Color Hunt](https://colorhunt.co/) - Color Palette
-* [Ui.Dev](https://ui.dev/amiresponsive) - Responsive Sample Image
+* [Ui.Dev](https://ui.dev/amiresponsive/) - Responsive Sample Image
+* [SweetAlerts2](https://sweetalert2.github.io/) - Answer Feedback Functionality
+* [Balsamiq](https://balsamiq.com/) - Wireframes
+* [Bootstrap](https://getbootstrap.com/) - Layout Responsiveness
+
+## Deployment
+
+The site was deployed to GitHub Pages. The deployment steps as follows:
+
+* In the [GitHub Repository](https://github.com/IanaLois/CI-PP2-Logo-Loco), navigate to the Settings tab.
+* From the source section drop-down menu, select the **Main** Branch, then click "Save".
+* The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here]()
 
 ## Credits
 
 ### Content
-
 * Allow some HTML elements in markdown lint rule MD033 was taken from [Stack Overflow](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
-* Set up device orientation in media queries was taken from [Stack Overflow](https://stackoverflow.com/questions/23273953/how-do-i-get-responsive-css-to-fit-the-viewport-when-switching-between-portrait)
-* Implement string validation in javascript to allow certain characters was taken from [Stack Overflow](https://stackoverflow.com/questions/67310617/javascript-check-if-string-contains-only-letters-numbers-whitespace-and-spec) and [Stack Overflow](https://stackoverflow.com/questions/74473909/regex-to-accept-special-character-only-in-presence-of-alphabets-or-numeric-value)
 * Instructions on how to modify image size in markdown were taken from [Linux Hint](https://linuxhint.com/add-images-markdown-modify-image-size/#:~:text=For%20Modifying%20Image%20Size%20in%20Markdown%3A&text=We%20can%20change%20the%20size,of%20the%20image%20in%20Markdown)
-* Instructions on how to create the link underline animation were taken from [Tobias Ahlin](https://tobiasahlin.com/blog/css-trick-animating-link-underlines/)
-* All icons on this webpage were taken from [Font Awesome](https://fontawesome.com/)
 * All other enquiries and assistance were answered and acquired from [MDN Web Docs](https://developer.mozilla.org/en-US/) and [W3Schools](https://www.w3schools.com/)
+* The Logo Loco Quiz game was inspired by the youtube tutorial from Web Dev Simplified [Tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k/)
+
+### Media
+* All logos are owned by their rightful owner and the original image url address was linked.
+* All icons on this webpage were taken from [Font Awesome](https://fontawesome.com/)
+
+### Acknowledgements
+- I would like to thank my mentor Richard Wells for being very patient with me and giving me the encouragement I needed.
