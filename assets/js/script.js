@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const answers = document.getElementsByClassName('option');
     const scoreDisplay = document.getElementById('score-display');
     const answersContainer = document.getElementById('answersContainer');
+    const endPage = document.querySelector('.end-page');
+    const userScoreSpan = document.getElementById('user-score');
 
     const questions = [
         {
@@ -122,8 +124,8 @@ document.addEventListener('DOMContentLoaded', function () {
     let questionNumber = 0;
 
     function getQuestion() {
-        scoreDisplay.style.display = "block";
-        questionDisplay.style.display = "block";
+        scoreDisplay.style.display = 'block';
+        questionDisplay.style.display = 'block';
         questionCounter.innerHTML = `Question ${questionNumber + 1}`;
         let i = 0;
 
@@ -150,7 +152,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             if (questionNumber >= questions.length) {
-                console.log('End the game here');
+                gamePage.style.display = 'none';
+                endPage.style.display = 'block';
+                scoreDisplay.style.display = 'none';
+                questionDisplay.style.display = 'none';
+                userScoreSpan.textContent = score;
+
+                document.getElementById('play-again-button').addEventListener('click', function () {
+                    window.location.href = 'index.html';
+                });
             } else {
                 getQuestion();
             }
@@ -169,7 +179,15 @@ document.addEventListener('DOMContentLoaded', function () {
             timer: 1500,
         }).then(() => {
             if (questionNumber >= questions.length) {
-                // End of game
+                gamePage.style.display = 'none';
+                endPage.style.display = 'block';
+                scoreDisplay.style.display = 'none';
+                questionDisplay.style.display = 'none';
+                userScoreSpan.textContent = score;
+
+                document.getElementById('play-again-button').addEventListener('click', function () {
+                    window.location.href = 'index.html';
+                });
             } else {
                 getQuestion();
             }
