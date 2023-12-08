@@ -171,6 +171,11 @@ input[type="text"]::placeholder {
     align-items: center;
 }
 
+.rules-p {
+    font-size: 1.6rem;
+    padding: 0 5rem;
+}
+
 /* -------------------------------------------- Button Style and Hover Effect */
 
 .button-style {
@@ -265,17 +270,14 @@ input[type="text"]::placeholder {
 
 /* Media Queries */
 
-@media (min-width: 320px) {
+@media (min-width: 320px) and (max-width:426px) {
     .container {
         max-width: 18rem;
         min-width: 18rem;
     }
-}
 
-@media (min-width: 1400px) {
-
-    .col-xxl.difficulty-title.d-flex.justify-content-center,
-    .col-xxl.rules-title.d-flex.justify-content-center {
-        flex: 0 0 100%;
+    .rules-p {
+        font-size: 1.2rem;
+        padding: 0 0;
     }
 }
